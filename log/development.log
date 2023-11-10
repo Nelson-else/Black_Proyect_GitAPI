@@ -934,3 +934,39 @@ Processing by EstudiantesController#index as HTML
 Completed 200 OK in 97ms (Views: 90.0ms | ActiveRecord: 0.5ms | Allocations: 17540)
 
 
+Started GET "/estudiantes/new" for 127.0.0.1 at 2023-11-09 22:18:49 -0600
+Processing by EstudiantesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/new.html.erb within layouts/application
+  Rendered estudiantes/_form.html.erb (Duration: 45.9ms | Allocations: 6980)
+  Rendered estudiantes/new.html.erb within layouts/application (Duration: 49.7ms | Allocations: 7336)
+  Rendered layout layouts/application.html.erb (Duration: 59.1ms | Allocations: 9946)
+Completed 200 OK in 80ms (Views: 67.2ms | ActiveRecord: 0.0ms | Allocations: 13064)
+
+
+Started GET "/github" for 127.0.0.1 at 2023-11-09 22:19:06 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/github"):
+  
+Started GET "/github/repositories'" for 127.0.0.1 at 2023-11-09 22:19:33 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/github/repositories'"):
+  
+Started GET "/github/repositories" for 127.0.0.1 at 2023-11-09 22:19:36 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 0.9ms | Allocations: 251)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 2912)
+Completed 200 OK in 5562ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 5463)
+
+
+Started GET "/github/repositories" for 127.0.0.1 at 2023-11-09 22:20:08 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 0.1ms | Allocations: 21)
+  Rendered layout layouts/application.html.erb (Duration: 44.3ms | Allocations: 14129)
+Completed 200 OK in 5812ms (Views: 50.3ms | ActiveRecord: 0.0ms | Allocations: 16747)
+
+
