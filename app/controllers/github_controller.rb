@@ -7,7 +7,7 @@ class GithubController < ApplicationController
     def repositories
       # Aquí puedes personalizar la lógica según tus necesidades
       username = 'Nelson-else'
-      #username = 'AnonymousJHRR'bundle
+      #username = 'AnonymousJHRR'
       #username = 'matiasgarcia'
       response = self.class.get("/users/#{username}/repos")
   
@@ -19,23 +19,31 @@ class GithubController < ApplicationController
     end
 
     def download_repository
-        # Obtén el nombre del repositorio desde los parámetros
+        # Obtén el nombre del repositorio y el nombre de usuario desde los parámetros
         repo_name = params[:repo_name]
-        # Construye la URL del repositorio
-        repo_url = "https://github.com/#{params[:username]}/#{repo_name}.git"
-        # Define el directorio donde se almacenará el repositorio
-        repo_path = Rails.root.join('repos', repo_name)
-    
-        # Clona el repositorio utilizando el comando de sistema
-        command = "git clone #{repo_url} #{repo_path}"
-        success = system(command)
-    
-        if success
-          @success_message = "Repositorio '#{repo_name}' clonado con éxito en '#{repo_path}'."
+        username = params[:username]
+      
+        puts "Nombre del repositorio: #{repo_name.inspect}"
+        puts "Nombre de usuario: #{username.inspect}"
+      
+        if repo_name.present? && username.present?
+          # Construye la URL del repositorio
+          repo_url = "https://github.com/#{username}/#{repo_name}.git"
+          # Define el directorio donde se almacenará el repositorio
+          repo_path = Rails.root.join('repos', repo_name)
+      
+          # Clona el repositorio utilizando el comando de sistema
+          command = "git clone #{repo_url} #{repo_path}"
+          success = system(command)
+      
+          if success
+            @success_message = "Repositorio '#{repo_name}' clonado con éxito en '#{repo_path}'."
+          else
+            @error_message = "Error al clonar el repositorio '#{repo_name}'."
+          end
         else
-          @error_message = "Error al clonar el repositorio '#{repo_name}'."
+          @error_message = "Nombre de repositorio o nombre de usuario inválido."
         end
       end
-
-    
+      
 end

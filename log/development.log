@@ -1309,3 +1309,310 @@ Processing by GithubController#repositories as HTML
 Completed 200 OK in 473ms (Views: 13.2ms | ActiveRecord: 0.0ms | Allocations: 4982)
 
 
+Started GET "/" for 127.0.0.1 at 2023-11-09 23:09:45 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 2.1ms | Allocations: 254)
+  Rendered layout layouts/application.html.erb (Duration: 62.6ms | Allocations: 14562)
+Completed 200 OK in 5704ms (Views: 66.7ms | ActiveRecord: 0.0ms | Allocations: 17502)
+
+
+Started GET "/github/repositories" for 127.0.0.1 at 2023-11-09 23:10:22 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 2368)
+Completed 200 OK in 591ms (Views: 13.7ms | ActiveRecord: 0.0ms | Allocations: 4495)
+
+
+Started GET "/github/download_repository" for 127.0.0.1 at 2023-11-09 23:10:52 -0600
+Processing by GithubController#download_repository as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 496)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/github_controller.rb:27:in `download_repository'
+Started GET "/github/download_repository" for 127.0.0.1 at 2023-11-09 23:11:49 -0600
+Processing by GithubController#download_repository as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 473)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/github_controller.rb:27:in `download_repository'
+Started GET "/github/download_repository" for 127.0.0.1 at 2023-11-09 23:11:57 -0600
+Processing by GithubController#download_repository as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 473)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/github_controller.rb:27:in `download_repository'
+Started GET "/github/repositories" for 127.0.0.1 at 2023-11-09 23:15:22 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 1.2ms | Allocations: 254)
+  Rendered layout layouts/application.html.erb (Duration: 52.8ms | Allocations: 14561)
+Completed 200 OK in 679ms (Views: 59.6ms | ActiveRecord: 0.0ms | Allocations: 17484)
+
+
+Started GET "/github/download_repository" for 127.0.0.1 at 2023-11-09 23:15:33 -0600
+Processing by GithubController#download_repository as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.8ms | Allocations: 280)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 2640)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 2984)
+
+
+Started GET "/github/download_repository/Calculator_rpc" for 127.0.0.1 at 2023-11-09 23:17:14 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/github/download_repository/Calculator_rpc"):
+  
+Started GET "/github/download_repository" for 127.0.0.1 at 2023-11-09 23:18:40 -0600
+Processing by GithubController#download_repository as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.9ms | Allocations: 314)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 3140)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms | Allocations: 4075)
+
+
+Started GET "/github/download_repository" for 127.0.0.1 at 2023-11-09 23:18:41 -0600
+Processing by GithubController#download_repository as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.2ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 2356)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 2648)
+
+
+Started GET "/github/download_repository" for 127.0.0.1 at 2023-11-09 23:18:43 -0600
+Processing by GithubController#download_repository as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 2376)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 2648)
+
+
+Started GET "/github/repositories" for 127.0.0.1 at 2023-11-09 23:18:53 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 0.9ms | Allocations: 219)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 2566)
+Completed 200 OK in 570ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 4816)
+
+
+Started GET "/github/download_repository" for 127.0.0.1 at 2023-11-09 23:21:15 -0600
+Processing by GithubController#download_repository as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.8ms | Allocations: 313)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 3118)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.0ms | Allocations: 4042)
+
+
+Started GET "/github/download_repository" for 127.0.0.1 at 2023-11-09 23:21:17 -0600
+Processing by GithubController#download_repository as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 2351)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 2642)
+
+
+Started GET "/github/download_repository" for 127.0.0.1 at 2023-11-09 23:23:55 -0600
+Processing by GithubController#download_repository as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.1ms | Allocations: 14)
+  Rendered layout layouts/application.html.erb (Duration: 64.8ms | Allocations: 14164)
+Completed 200 OK in 68ms (Views: 67.0ms | ActiveRecord: 0.0ms | Allocations: 14819)
+
+
+Started GET "/github/repositories" for 127.0.0.1 at 2023-11-09 23:23:58 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 1.1ms | Allocations: 247)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 2594)
+Completed 200 OK in 10563ms (Views: 16.5ms | ActiveRecord: 0.0ms | Allocations: 4916)
+
+
+Started GET "/github/download_repository" for 127.0.0.1 at 2023-11-09 23:24:13 -0600
+Processing by GithubController#download_repository as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 2360)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 2635)
+
+
+Started GET "/github/download_repository" for 127.0.0.1 at 2023-11-09 23:26:28 -0600
+Processing by GithubController#download_repository as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.8ms | Allocations: 314)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 3136)
+Completed 200 OK in 20ms (Views: 16.9ms | ActiveRecord: 0.0ms | Allocations: 4064)
+
+
+Started GET "/github/download_repository" for 127.0.0.1 at 2023-11-09 23:27:01 -0600
+Processing by GithubController#download_repository as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.8ms | Allocations: 313)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 3127)
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.0ms | Allocations: 4071)
+
+
+Started GET "/github/repositories" for 127.0.0.1 at 2023-11-09 23:27:27 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 1.0ms | Allocations: 251)
+  Rendered layout layouts/application.html.erb (Duration: 48.4ms | Allocations: 14337)
+Completed 200 OK in 572ms (Views: 53.7ms | ActiveRecord: 0.0ms | Allocations: 16912)
+
+
+Started GET "/github/download_repository" for 127.0.0.1 at 2023-11-09 23:27:31 -0600
+Processing by GithubController#download_repository as HTML
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.0ms | Allocations: 3450)
+
+
+  
+NameError (undefined local variable or method `username' for #<GithubController:0x0000000003efa8>
+
+        response = self.class.get("/users/#{username}/repos")
+                                            ^^^^^^^^):
+  
+app/controllers/github_controller.rb:25:in `download_repository'
+Started GET "/github/repositories" for 127.0.0.1 at 2023-11-09 23:30:37 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 2407)
+Completed 200 OK in 542ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 4614)
+
+
+Started GET "/github/repositories" for 127.0.0.1 at 2023-11-09 23:31:45 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 4.7ms | Allocations: 821)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 3621)
+Completed 200 OK in 599ms (Views: 23.4ms | ActiveRecord: 0.0ms | Allocations: 6283)
+
+
+Started GET "/github/download_repository" for 127.0.0.1 at 2023-11-09 23:31:51 -0600
+Processing by GithubController#download_repository as HTML
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.0ms | Allocations: 3419)
+
+
+  
+NameError (undefined local variable or method `username' for #<GithubController:0x0000000003f3b8>
+
+        response = self.class.get("/users/#{username}/repos")
+                                            ^^^^^^^^):
+  
+app/controllers/github_controller.rb:25:in `download_repository'
+Started GET "/github/download_repository?repo_name=Calculator_rpc&username=tu_nombre_de_usuario_en_github" for 127.0.0.1 at 2023-11-09 23:31:56 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"Calculator_rpc", "username"=>"tu_nombre_de_usuario_en_github"}
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms | Allocations: 3382)
+
+
+  
+NameError (undefined local variable or method `username' for #<GithubController:0x0000000003f6d8>
+
+        response = self.class.get("/users/#{username}/repos")
+                                            ^^^^^^^^):
+  
+app/controllers/github_controller.rb:25:in `download_repository'
+Started GET "/" for 127.0.0.1 at 2023-11-09 23:35:31 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 5.5ms | Allocations: 824)
+  Rendered layout layouts/application.html.erb (Duration: 67.6ms | Allocations: 15101)
+Completed 200 OK in 667ms (Views: 72.0ms | ActiveRecord: 0.0ms | Allocations: 18102)
+
+
+Started GET "/github/download_repository?repo_name=Socket_udp&username=tu_nombre_de_usuario_en_github" for 127.0.0.1 at 2023-11-09 23:35:35 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"Socket_udp", "username"=>"tu_nombre_de_usuario_en_github"}
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.8ms | Allocations: 279)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 2617)
+Completed 200 OK in 11ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 2896)
+
+
+Started GET "/github/download_repository?repo_name=CPU_monitor&username=tu_nombre_de_usuario_en_github" for 127.0.0.1 at 2023-11-09 23:35:40 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"CPU_monitor", "username"=>"tu_nombre_de_usuario_en_github"}
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2373)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.0ms | Allocations: 2635)
+
+
+Started GET "/github/download_repository?repo_name=Plugin_Pasarela_Pago_Plugin_Skeleton&username=tu_nombre_de_usuario_en_github" for 127.0.0.1 at 2023-11-09 23:35:43 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"Plugin_Pasarela_Pago_Plugin_Skeleton", "username"=>"tu_nombre_de_usuario_en_github"}
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 2358)
+Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 2620)
+
+
+Started GET "/github/download_repository" for 127.0.0.1 at 2023-11-09 23:35:48 -0600
+Processing by GithubController#download_repository as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 2367)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.0ms | Allocations: 2627)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-09 23:37:32 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 13.3ms | Allocations: 564)
+  Rendered layout layouts/application.html.erb (Duration: 99.3ms | Allocations: 14688)
+Completed 200 OK in 674ms (Views: 119.0ms | ActiveRecord: 0.0ms | Allocations: 17187)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-09 23:46:40 -0600
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1171)
+  Rendered layout layouts/application.html.erb (Duration: 391.6ms | Allocations: 36186)
+Completed 200 OK in 10948ms (Views: 397.5ms | ActiveRecord: 0.0ms | Allocations: 42751)
+
+
+Started GET "/github/download_repository?repo_name=Calculator_rpc&username=tu_nombre_de_usuario_en_github" for 127.0.0.1 at 2023-11-09 23:47:00 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"Calculator_rpc", "username"=>"tu_nombre_de_usuario_en_github"}
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 27.3ms | Allocations: 309)
+  Rendered layout layouts/application.html.erb (Duration: 108.3ms | Allocations: 2852)
+Completed 200 OK in 102782ms (Views: 170.4ms | ActiveRecord: 0.0ms | Allocations: 3653)
+
+
