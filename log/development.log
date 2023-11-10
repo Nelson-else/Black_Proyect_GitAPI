@@ -1023,3 +1023,12 @@ Processing by GithubController#repositories as HTML
 Completed 200 OK in 489ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 6227)
 
 
+Started GET "/github/repositories" for 127.0.0.1 at 2023-11-09 22:43:32 -0600
+  
+NameError (uninitialized constant GithubController::Git
+
+    include Git #down
+            ^^^):
+  
+app/controllers/github_controller.rb:5:in `<class:GithubController>'
+app/controllers/github_controller.rb:1:in `<main>'

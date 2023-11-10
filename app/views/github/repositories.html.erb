@@ -10,3 +10,23 @@
 <% else %>
   <p><%= @error_message %></p>
 <% end %>
+
+<!-- app/views/github/repositories.html.erb -->
+<h1>Repositorios de GitHub Download</h1>
+
+<% if @repositories %>
+  <ul>
+    <% @repositories.each do |repo| %>
+      <li>
+        <%= repo['name'] %>
+        <%= link_to 'Descargar', download_repository_path(username: 'tu_nombre_de_usuario_en_github', repo_name: repo['name']), method: :get %>
+      </li>
+    <% end %>
+  </ul>
+<% else %>
+  <p><%= @error_message %></p>
+<% end %>
+
+<% if @success_message %>
+  <p><%= @success_message %></p>
+<% end %>
