@@ -2,7 +2,6 @@
 class GithubController < ApplicationController
     # app/controllers/github_controller.rb
     include HTTParty
-    
     base_uri 'https://api.github.com'
   
     def repositories
@@ -27,12 +26,16 @@ class GithubController < ApplicationController
         # Define el directorio donde se almacenará el repositorio
         repo_path = Rails.root.join('repos', repo_name)
     
-        # Clona el repositorio en el directorio especificado
-        begin
-          Git.clone(repo_url, repo_name, path: repo_path)
+        # Clona el repositorio utilizando el comando de sistema
+        command = "git clone #{repo_url} #{repo_path}"
+        success = system(command)
+    
+        if success
           @success_message = "Repositorio '#{repo_name}' clonado con éxito en '#{repo_path}'."
-        rescue Git::GitExecuteError => e
-          @error_message = "Error al clonar el repositorio '#{repo_name}'. Detalles: #{e.message}"
+        else
+          @error_message = "Error al clonar el repositorio '#{repo_name}'."
         end
       end
+
+    
 end
