@@ -970,3 +970,56 @@ Processing by GithubController#repositories as HTML
 Completed 200 OK in 5812ms (Views: 50.3ms | ActiveRecord: 0.0ms | Allocations: 16747)
 
 
+Started GET "/github/repositories" for 127.0.0.1 at 2023-11-09 22:29:13 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 0.9ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 56.5ms | Allocations: 14128)
+Completed 200 OK in 693ms (Views: 58.9ms | ActiveRecord: 0.0ms | Allocations: 16351)
+
+
+Started GET "/github/repositories" for 127.0.0.1 at 2023-11-09 22:32:25 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 0.2ms | Allocations: 45)
+  Rendered layout layouts/application.html.erb (Duration: 43.7ms | Allocations: 14106)
+Completed 200 OK in 1367ms (Views: 52.4ms | ActiveRecord: 0.0ms | Allocations: 18438)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-09 22:33:17 -0600
+  
+ArgumentError (Invalid route name, already in use: 'root' 
+You may have defined two routes with the same name using the `:as` option, or you may be overriding a route already defined by a resource with the same naming. For the latter, you can restrict the routes created with `resources` as explained here: 
+https://guides.rubyonrails.org/routing.html#restricting-the-routes-created):
+  
+config/routes.rb:5:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2023-11-09 22:34:02 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 0.2ms | Allocations: 45)
+  Rendered layout layouts/application.html.erb (Duration: 52.5ms | Allocations: 14160)
+Completed 200 OK in 5927ms (Views: 57.1ms | ActiveRecord: 0.0ms | Allocations: 18591)
+
+
+Started GET "/github/repositories" for 127.0.0.1 at 2023-11-09 22:34:18 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 0.4ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 2392)
+Completed 200 OK in 438ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 6309)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-09 22:34:30 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 0.2ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 2416)
+Completed 200 OK in 489ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 6227)
+
+

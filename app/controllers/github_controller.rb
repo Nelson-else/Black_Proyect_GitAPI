@@ -6,7 +6,9 @@ class GithubController < ApplicationController
   
     def repositories
       # Aquí puedes personalizar la lógica según tus necesidades
-      username = 'Nelson-else'
+      #username = 'Nelson-else'.
+      #username = 'AnonymousJHRR'
+      username = 'matiasgarcia'
       response = self.class.get("/users/#{username}/repos")
   
       if response.success?
