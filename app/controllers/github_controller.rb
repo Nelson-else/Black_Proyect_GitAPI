@@ -1,15 +1,15 @@
-class GithubController < ApplicationController
 
+class GithubController < ApplicationController
     # app/controllers/github_controller.rb
     include HTTParty
-    include Git #down
+    
     base_uri 'https://api.github.com'
   
     def repositories
       # Aquí puedes personalizar la lógica según tus necesidades
-      #username = 'Nelson-else'.
-      #username = 'AnonymousJHRR'
-      username = 'matiasgarcia'
+      username = 'Nelson-else'
+      #username = 'AnonymousJHRR'bundle
+      #username = 'matiasgarcia'
       response = self.class.get("/users/#{username}/repos")
   
       if response.success?
@@ -18,7 +18,7 @@ class GithubController < ApplicationController
         @error_message = "Error al obtener los repositorios de GitHub. Detalles: #{response.code} - #{response.message}"
       end
     end
-    
+
     def download_repository
         # Obtén el nombre del repositorio desde los parámetros
         repo_name = params[:repo_name]

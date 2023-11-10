@@ -1032,3 +1032,201 @@ NameError (uninitialized constant GithubController::Git
   
 app/controllers/github_controller.rb:5:in `<class:GithubController>'
 app/controllers/github_controller.rb:1:in `<main>'
+Started GET "/github/repositories" for 127.0.0.1 at 2023-11-09 22:46:57 -0600
+  
+NameError (uninitialized constant GithubController::Git
+
+    include Git #down
+            ^^^):
+  
+app/controllers/github_controller.rb:5:in `<class:GithubController>'
+app/controllers/github_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2023-11-09 22:48:34 -0600
+  
+LoadError (cannot load such file -- git):
+  
+app/controllers/github_controller.rb:4:in `<class:GithubController>'
+app/controllers/github_controller.rb:1:in `<main>'
+Started GET "/github/repositories" for 127.0.0.1 at 2023-11-09 22:50:13 -0600
+  
+LoadError (cannot load such file -- git):
+  
+app/controllers/github_controller.rb:1:in `<main>'
+Started GET "/github/repositories" for 127.0.0.1 at 2023-11-09 22:51:38 -0600
+  
+LoadError (cannot load such file -- git):
+  
+app/controllers/github_controller.rb:2:in `<main>'
+Started GET "/github/repositories" for 127.0.0.1 at 2023-11-09 22:52:57 -0600
+  
+LoadError (cannot load such file -- git):
+  
+app/controllers/github_controller.rb:2:in `<main>'
+Started GET "/" for 127.0.0.1 at 2023-11-09 22:54:10 -0600
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+LoadError (cannot load such file -- git):
+  
+app/controllers/github_controller.rb:2:in `<main>'
+Started GET "/" for 127.0.0.1 at 2023-11-09 22:54:53 -0600
+  
+NameError (uninitialized constant GithubController::Git
+
+    include Git
+            ^^^):
+  
+app/controllers/github_controller.rb:5:in `<class:GithubController>'
+app/controllers/github_controller.rb:3:in `<main>'
+Started GET "/" for 127.0.0.1 at 2023-11-09 22:55:02 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 6.6ms | Allocations: 2680)
+  Rendered layout layouts/application.html.erb (Duration: 171.3ms | Allocations: 37525)
+Completed 200 OK in 5896ms (Views: 173.8ms | ActiveRecord: 0.0ms | Allocations: 44092)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-09 22:55:27 -0600
+Processing by GithubController#repositories as HTML
+Completed 500 Internal Server Error in 10452ms (ActiveRecord: 0.0ms | Allocations: 3193)
+
+
+  
+NoMethodError (undefined method `response=' for "Nelson-else":String
+Did you mean?  respond_to?):
+  
+app/controllers/github_controller.rb:10:in `repositories'
+Started GET "/" for 127.0.0.1 at 2023-11-09 22:55:53 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 1.5ms | Allocations: 571)
+  Rendered layout layouts/application.html.erb (Duration: 46.2ms | Allocations: 14649)
+Completed 200 OK in 735ms (Views: 48.5ms | ActiveRecord: 0.0ms | Allocations: 17155)
+
+
+Started GET "/github/download_repository?repo_name=Calculator_rpc&username=tu_nombre_de_usuario_en_github" for 127.0.0.1 at 2023-11-09 22:55:57 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"Calculator_rpc", "username"=>"tu_nombre_de_usuario_en_github"}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 3234)
+
+
+  
+NameError (uninitialized constant GithubController::Git
+
+        rescue Git::GitExecuteError => e
+               ^^^):
+  
+app/controllers/github_controller.rb:34:in `rescue in download_repository'
+app/controllers/github_controller.rb:31:in `download_repository'
+Started GET "/github/download_repository?repo_name=Calculator_rpc&username=tu_nombre_de_usuario_en_github" for 127.0.0.1 at 2023-11-09 22:56:58 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"Calculator_rpc", "username"=>"tu_nombre_de_usuario_en_github"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 3168)
+
+
+  
+NameError (uninitialized constant GithubController::Git
+
+        rescue Git::GitExecuteError => e
+               ^^^):
+  
+app/controllers/github_controller.rb:34:in `rescue in download_repository'
+app/controllers/github_controller.rb:31:in `download_repository'
+Started GET "/" for 127.0.0.1 at 2023-11-09 22:57:03 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 4.0ms | Allocations: 980)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 3801)
+Completed 200 OK in 709ms (Views: 17.2ms | ActiveRecord: 0.0ms | Allocations: 6532)
+
+
+Started GET "/github/download_repository?repo_name=Socket_udp&username=Nelson-else" for 127.0.0.1 at 2023-11-09 22:57:12 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"Socket_udp", "username"=>"Nelson-else"}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 3216)
+
+
+  
+NameError (uninitialized constant GithubController::Git
+
+        rescue Git::GitExecuteError => e
+               ^^^):
+  
+app/controllers/github_controller.rb:34:in `rescue in download_repository'
+app/controllers/github_controller.rb:31:in `download_repository'
+Started GET "/github/repositories" for 127.0.0.1 at 2023-11-09 22:57:34 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 1.0ms | Allocations: 501)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 2883)
+Completed 200 OK in 582ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 5015)
+
+
+Started GET "/github/repositories" for 127.0.0.1 at 2023-11-09 22:58:22 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 1.2ms | Allocations: 571)
+  Rendered layout layouts/application.html.erb (Duration: 48.9ms | Allocations: 14664)
+Completed 200 OK in 794ms (Views: 51.7ms | ActiveRecord: 0.0ms | Allocations: 17169)
+
+
+Started GET "/github/download_repository?repo_name=Calculator_rpc&username=Nelson-else" for 127.0.0.1 at 2023-11-09 22:58:26 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"Calculator_rpc", "username"=>"Nelson-else"}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 3223)
+
+
+  
+NameError (uninitialized constant GithubController::Git
+
+        rescue Git::GitExecuteError => e
+               ^^^):
+  
+app/controllers/github_controller.rb:34:in `rescue in download_repository'
+app/controllers/github_controller.rb:31:in `download_repository'
+Started GET "/" for 127.0.0.1 at 2023-11-09 22:58:56 -0600
+  
+LoadError (cannot load such file -- git):
+  
+app/controllers/github_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2023-11-09 23:01:02 -0600
+  
+LoadError (cannot load such file -- git):
+  
+app/controllers/github_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2023-11-09 23:01:29 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 1.1ms | Allocations: 571)
+  Rendered layout layouts/application.html.erb (Duration: 42.4ms | Allocations: 14713)
+Completed 200 OK in 734ms (Views: 46.1ms | ActiveRecord: 0.0ms | Allocations: 17210)
+
+
+Started GET "/github/download_repository?repo_name=Calculator_rpc&username=Nelson-else" for 127.0.0.1 at 2023-11-09 23:01:31 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"Calculator_rpc", "username"=>"Nelson-else"}
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 3223)
+
+
+  
+NameError (uninitialized constant GithubController::Git
+
+        rescue Git::GitExecuteError => e
+               ^^^):
+  
+app/controllers/github_controller.rb:34:in `rescue in download_repository'
+app/controllers/github_controller.rb:31:in `download_repository'
+Started GET "/" for 127.0.0.1 at 2023-11-09 23:03:50 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 1.1ms | Allocations: 501)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 2865)
+Completed 200 OK in 451ms (Views: 14.5ms | ActiveRecord: 0.0ms | Allocations: 4994)
+
+
