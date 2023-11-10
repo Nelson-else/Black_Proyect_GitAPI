@@ -1838,3 +1838,31 @@ Processing by GithubController#download_repository as HTML
 Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 2996)
 
 
+Started GET "/" for 127.0.0.1 at 2023-11-10 00:07:25 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 7.1ms | Allocations: 494)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 2789)
+Completed 200 OK in 970ms (Views: 20.4ms | ActiveRecord: 0.0ms | Allocations: 4931)
+
+
+Started GET "/github/download_repository?repo_name=Plugin_Pasarela_Pago_Plugin_Skeleton&username=Nelson-else" for 127.0.0.1 at 2023-11-10 00:07:39 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"Plugin_Pasarela_Pago_Plugin_Skeleton", "username"=>"Nelson-else"}
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.2ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 2348)
+Completed 200 OK in 6094ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 2729)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-10 00:10:36 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 2.1ms | Allocations: 494)
+  Rendered layout layouts/application.html.erb (Duration: 56.1ms | Allocations: 2846)
+Completed 200 OK in 713ms (Views: 58.5ms | ActiveRecord: 0.0ms | Allocations: 4865)
+
+
