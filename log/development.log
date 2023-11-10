@@ -1616,3 +1616,225 @@ Processing by GithubController#download_repository as HTML
 Completed 200 OK in 102782ms (Views: 170.4ms | ActiveRecord: 0.0ms | Allocations: 3653)
 
 
+Started GET "/github/download_repository?repo_name=Calculator_rpc&username=tu_nombre_de_usuario_en_github" for 127.0.0.1 at 2023-11-09 23:50:36 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"Calculator_rpc", "username"=>"tu_nombre_de_usuario_en_github"}
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 4.8ms | Allocations: 313)
+  Rendered layout layouts/application.html.erb (Duration: 32.4ms | Allocations: 3141)
+Completed 200 OK in 1792ms (Views: 64.7ms | ActiveRecord: 0.0ms | Allocations: 4144)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-09 23:50:42 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 25.7ms | Allocations: 752)
+  Rendered layout layouts/application.html.erb (Duration: 37.9ms | Allocations: 3114)
+Completed 200 OK in 782ms (Views: 57.2ms | ActiveRecord: 0.0ms | Allocations: 5294)
+
+
+Started GET "/github/download_repository?repo_name=Calculator_rpc&username=Nelson-else" for 127.0.0.1 at 2023-11-09 23:50:54 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"Calculator_rpc", "username"=>"Nelson-else"}
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 2354)
+Completed 200 OK in 864ms (Views: 14.7ms | ActiveRecord: 0.0ms | Allocations: 2714)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-09 23:52:55 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 20.1ms | Allocations: 817)
+  Rendered layout layouts/application.html.erb (Duration: 54.0ms | Allocations: 3602)
+Completed 200 OK in 5590ms (Views: 59.5ms | ActiveRecord: 0.0ms | Allocations: 6308)
+
+
+Started GET "/github/download_repository?repo_name=Socket_udp&username=Nelson-else" for 127.0.0.1 at 2023-11-09 23:53:04 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"Socket_udp", "username"=>"Nelson-else"}
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 56.3ms | Allocations: 281)
+  Rendered layout layouts/application.html.erb (Duration: 100.6ms | Allocations: 2620)
+Completed 200 OK in 11033ms (Views: 103.9ms | ActiveRecord: 0.0ms | Allocations: 3154)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-09 23:53:42 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 38.4ms | Allocations: 494)
+  Rendered layout layouts/application.html.erb (Duration: 92.6ms | Allocations: 2865)
+Completed 200 OK in 551ms (Views: 94.3ms | ActiveRecord: 0.0ms | Allocations: 4973)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-09 23:54:18 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 14.3ms | Allocations: 2129)
+  Rendered layout layouts/application.html.erb (Duration: 71.0ms | Allocations: 16134)
+Completed 200 OK in 1431ms (Views: 73.4ms | ActiveRecord: 0.0ms | Allocations: 20453)
+
+
+Started GET "/github/download_repository?repo_name=es6-shim&username=Nelson-else" for 127.0.0.1 at 2023-11-09 23:54:25 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"es6-shim", "username"=>"Nelson-else"}
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 2353)
+Completed 200 OK in 6582ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 2745)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-09 23:55:10 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 24.4ms | Allocations: 2380)
+  Rendered layout layouts/application.html.erb (Duration: 41.8ms | Allocations: 5177)
+Completed 200 OK in 717ms (Views: 44.9ms | ActiveRecord: 0.0ms | Allocations: 9769)
+
+
+Started GET "/github/download_repository?repo_name=es6-shim&username=matiasgarcia" for 127.0.0.1 at 2023-11-09 23:55:14 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"es6-shim", "username"=>"matiasgarcia"}
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 1.7ms | Allocations: 280)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 2655)
+Completed 200 OK in 15189ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 3121)
+
+
+Started GET "/github/download_repository?repo_name=es6-shim&username=matiasgarcia" for 127.0.0.1 at 2023-11-09 23:56:25 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"es6-shim", "username"=>"matiasgarcia"}
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.7ms | Allocations: 313)
+  Rendered layout layouts/application.html.erb (Duration: 95.8ms | Allocations: 14510)
+Completed 200 OK in 9384ms (Views: 103.8ms | ActiveRecord: 0.0ms | Allocations: 15686)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-09 23:57:04 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 5.0ms | Allocations: 423)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 2806)
+Completed 200 OK in 550ms (Views: 16.8ms | ActiveRecord: 0.0ms | Allocations: 4684)
+
+
+Started GET "/github/download_repository?repo_name=wordpress&username=Nelson-else" for 127.0.0.1 at 2023-11-09 23:57:07 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"wordpress", "username"=>"Nelson-else"}
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 2345)
+Completed 200 OK in 15175ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 2809)
+
+
+Started GET "/github/download_repository?repo_name=wordpress&username=Nelson-else" for 127.0.0.1 at 2023-11-09 23:57:30 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"wordpress", "username"=>"Nelson-else"}
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 2360)
+Completed 200 OK in 11220ms (Views: 41.9ms | ActiveRecord: 0.0ms | Allocations: 2744)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-09 23:57:47 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 0.5ms | Allocations: 153)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 2521)
+Completed 200 OK in 492ms (Views: 13.4ms | ActiveRecord: 0.0ms | Allocations: 4201)
+
+
+Started GET "/github/download_repository?repo_name=AnonymousJHRR&username=Nelson-else" for 127.0.0.1 at 2023-11-09 23:57:48 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"AnonymousJHRR", "username"=>"Nelson-else"}
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 2373)
+Completed 200 OK in 1517ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 2725)
+
+
+Started GET "/github/download_repository?repo_name=AnonymousJHRR&username=Nelson-else" for 127.0.0.1 at 2023-11-09 23:57:54 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"AnonymousJHRR", "username"=>"Nelson-else"}
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 2381)
+Completed 200 OK in 1339ms (Views: 16.0ms | ActiveRecord: 0.0ms | Allocations: 2731)
+
+
+Started GET "/github/download_repository?repo_name=AnonymousJHRR&username=Nelson-else" for 127.0.0.1 at 2023-11-09 23:58:25 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"AnonymousJHRR", "username"=>"Nelson-else"}
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.8ms | Allocations: 313)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 3124)
+Completed 200 OK in 6006ms (Views: 20.1ms | ActiveRecord: 0.0ms | Allocations: 4137)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-09 23:58:36 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 1.8ms | Allocations: 414)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 2770)
+Completed 200 OK in 10592ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 4688)
+
+
+Started GET "/github/download_repository?repo_name=AnonymousJHRR&username=AnonymousJHRR" for 127.0.0.1 at 2023-11-09 23:58:50 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"AnonymousJHRR", "username"=>"AnonymousJHRR"}
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 2357)
+Completed 200 OK in 10742ms (Views: 14.2ms | ActiveRecord: 0.0ms | Allocations: 2745)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-09 23:59:38 -0600
+Processing by GithubController#repositories as HTML
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 0.0ms | Allocations: 3374)
+
+
+  
+NameError (undefined local variable or method `username' for #<GithubController:0x00000000017908>
+
+      response = self.class.get("/users/#{username}/repos")
+                                          ^^^^^^^^):
+  
+app/controllers/github_controller.rb:12:in `repositories'
+Started GET "/" for 127.0.0.1 at 2023-11-09 23:59:58 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 2.6ms | Allocations: 821)
+  Rendered layout layouts/application.html.erb (Duration: 59.3ms | Allocations: 15103)
+Completed 200 OK in 5645ms (Views: 67.9ms | ActiveRecord: 0.0ms | Allocations: 18011)
+
+
+Started GET "/github/download_repository" for 127.0.0.1 at 2023-11-10 00:00:25 -0600
+Processing by GithubController#download_repository as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 3.1ms | Allocations: 280)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 2643)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 2996)
+
+
