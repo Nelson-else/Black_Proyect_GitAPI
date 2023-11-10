@@ -923,3 +923,14 @@ Processing by EstudiantesController#index as TURBO_STREAM
 Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.1ms | Allocations: 3247)
 
 
+Started GET "/estudiantes" for 127.0.0.1 at 2023-11-09 22:16:03 -0600
+Processing by EstudiantesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/index.html.erb within layouts/application
+  [1m[36mEstudiante Load (0.1ms)[0m  [1m[34mSELECT "estudiantes".* FROM "estudiantes"[0m
+  ↳ app/views/estudiantes/index.html.erb:6
+  Rendered estudiantes/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1434)
+  Rendered layout layouts/application.html.erb (Duration: 84.5ms | Allocations: 15503)
+Completed 200 OK in 97ms (Views: 90.0ms | ActiveRecord: 0.5ms | Allocations: 17540)
+
+
