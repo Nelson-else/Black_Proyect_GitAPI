@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombres: MyString
+  apellidos: MyString
+  carrera: MyString
+  carnet: MyString
+  fecha_nacimiento: 2023-10-02
+  edad: 1
+  celular: MyString
+
+two:
+  nombres: MyString
+  apellidos: MyString
+  carrera: MyString
+  carnet: MyString
+  fecha_nacimiento: 2023-10-02
+  edad: 1
+  celular: MyString

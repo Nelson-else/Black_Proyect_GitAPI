@@ -1,0 +1,703 @@
+Started GET "/" for 127.0.0.1 at 2023-10-02 08:50:43 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/3.0.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/3.0.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.3ms | Allocations: 931)
+Completed 200 OK in 77ms (Views: 17.5ms | ActiveRecord: 0.0ms | Allocations: 10027)
+
+
+  [1m[35m (21.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (12.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateEstudiantes (20231002145835)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "estudiantes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "nombres" varchar, "apellidos" varchar, "carrera" varchar, "carnet" varchar, "fecha_nacimiento" date, "edad" integer, "celular" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20231002145835"]]
+  [1m[36mTRANSACTION (31.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-10-02 15:37:46.853379"], ["updated_at", "2023-10-02 15:37:46.853379"]]
+  [1m[36mTRANSACTION (57.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2023-10-02 09:53:55 -0600
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EstudiantesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/index.html.erb within layouts/application
+  [1m[36mEstudiante Load (1.3ms)[0m  [1m[34mSELECT "estudiantes".* FROM "estudiantes"[0m
+  ↳ app/views/estudiantes/index.html.erb:6
+  Rendered estudiantes/index.html.erb within layouts/application (Duration: 15.6ms | Allocations: 1777)
+  Rendered layout layouts/application.html.erb (Duration: 736.4ms | Allocations: 89987)
+Completed 200 OK in 802ms (Views: 749.9ms | ActiveRecord: 1.3ms | Allocations: 97651)
+
+
+Started GET "/" for 127.0.0.1 at 2023-10-02 10:27:18 -0600
+Processing by EstudiantesController#index as HTML
+Completed 500 Internal Server Error in 124ms (ActiveRecord: 0.0ms | Allocations: 875)
+
+
+  
+SyntaxError (/home/lg/Documentos/scaffproyect/app/models/estudiante.rb:2: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+...to, :edad, :celular, presence :true
+...                              ^
+):
+  
+app/models/estudiante.rb:2: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/models/estudiante.rb:2: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/controllers/estudiantes_controller.rb:6:in `index'
+Started GET "/" for 127.0.0.1 at 2023-10-02 10:30:22 -0600
+Processing by EstudiantesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/index.html.erb within layouts/application
+  [1m[36mEstudiante Load (2.6ms)[0m  [1m[34mSELECT "estudiantes".* FROM "estudiantes"[0m
+  ↳ app/views/estudiantes/index.html.erb:6
+  Rendered estudiantes/index.html.erb within layouts/application (Duration: 301.1ms | Allocations: 1208)
+  Rendered layout layouts/application.html.erb (Duration: 941.5ms | Allocations: 14972)
+Completed 200 OK in 1277ms (Views: 1042.0ms | ActiveRecord: 18.5ms | Allocations: 16741)
+
+
+Started GET "/" for 127.0.0.1 at 2023-10-02 10:45:14 -0600
+Processing by EstudiantesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/index.html.erb within layouts/application
+  [1m[36mEstudiante Load (0.5ms)[0m  [1m[34mSELECT "estudiantes".* FROM "estudiantes"[0m
+  ↳ app/views/estudiantes/index.html.erb:6
+  Rendered estudiantes/index.html.erb within layouts/application (Duration: 43.7ms | Allocations: 1199)
+  Rendered layout layouts/application.html.erb (Duration: 159.4ms | Allocations: 14863)
+Completed 200 OK in 188ms (Views: 164.5ms | ActiveRecord: 1.5ms | Allocations: 16717)
+
+
+Started GET "/estudiantes/new" for 127.0.0.1 at 2023-10-02 10:47:29 -0600
+Processing by EstudiantesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/new.html.erb within layouts/application
+  Rendered estudiantes/_form.html.erb (Duration: 155.6ms | Allocations: 5489)
+  Rendered estudiantes/new.html.erb within layouts/application (Duration: 179.1ms | Allocations: 5848)
+  Rendered layout layouts/application.html.erb (Duration: 191.6ms | Allocations: 8157)
+Completed 200 OK in 528ms (Views: 192.3ms | ActiveRecord: 7.8ms | Allocations: 31528)
+
+
+Started POST "/estudiantes" for 127.0.0.1 at 2023-10-02 10:48:21 -0600
+Processing by EstudiantesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "estudiante"=>{"nombres"=>"Nelson", "apellidos"=>"Largaespada", "carrera"=>"", "carnet"=>"18-05090-0", "fecha_nacimiento"=>"2001-02-18", "edad"=>"22", "celular"=>"767698xx"}, "commit"=>"Create Estudiante"}
+Completed 500 Internal Server Error in 172ms (ActiveRecord: 0.0ms | Allocations: 5288)
+
+
+  
+NoMethodError (undefined method `apellido' for #<Estudiante id: nil, nombres: "Nelson", apellidos: "Largaespada", carrera: "", carnet: "18-05090-0", fecha_nacimiento: "2001-02-18", edad: 22, celular: "767698xx", created_at: nil, updated_at: nil>
+Did you mean?  apellidos
+               apellidos?
+               apellidos=):
+  
+app/controllers/estudiantes_controller.rb:27:in `block in create'
+app/controllers/estudiantes_controller.rb:26:in `create'
+Started GET "/" for 127.0.0.1 at 2023-10-02 10:49:19 -0600
+Processing by EstudiantesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/index.html.erb within layouts/application
+  [1m[36mEstudiante Load (14.4ms)[0m  [1m[34mSELECT "estudiantes".* FROM "estudiantes"[0m
+  ↳ app/views/estudiantes/index.html.erb:6
+  Rendered estudiantes/index.html.erb within layouts/application (Duration: 115.0ms | Allocations: 810)
+  Rendered layout layouts/application.html.erb (Duration: 148.3ms | Allocations: 3135)
+Completed 200 OK in 154ms (Views: 135.3ms | ActiveRecord: 14.4ms | Allocations: 3494)
+
+
+Started GET "/" for 127.0.0.1 at 2023-10-02 10:49:19 -0600
+Processing by EstudiantesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/index.html.erb within layouts/application
+  [1m[36mEstudiante Load (0.1ms)[0m  [1m[34mSELECT "estudiantes".* FROM "estudiantes"[0m
+  ↳ app/views/estudiantes/index.html.erb:6
+  Rendered estudiantes/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 749)
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 2947)
+Completed 200 OK in 29ms (Views: 24.9ms | ActiveRecord: 0.1ms | Allocations: 3274)
+
+
+Started GET "/estudiantes/new" for 127.0.0.1 at 2023-10-02 10:49:24 -0600
+Processing by EstudiantesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/new.html.erb within layouts/application
+  Rendered estudiantes/_form.html.erb (Duration: 17.3ms | Allocations: 2194)
+  Rendered estudiantes/new.html.erb within layouts/application (Duration: 17.8ms | Allocations: 2279)
+  Rendered layout layouts/application.html.erb (Duration: 29.1ms | Allocations: 4464)
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.0ms | Allocations: 4801)
+
+
+Started POST "/estudiantes" for 127.0.0.1 at 2023-10-02 10:50:08 -0600
+Processing by EstudiantesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "estudiante"=>{"nombres"=>"Andres", "apellidos"=>"Valle", "carrera"=>"ing telematica", "carnet"=>"18-05090-1", "fecha_nacimiento"=>"2001-02-18", "edad"=>"18", "celular"=>"76500269"}, "commit"=>"Create Estudiante"}
+Completed 500 Internal Server Error in 276ms (ActiveRecord: 0.0ms | Allocations: 4680)
+
+
+  
+NoMethodError (undefined method `apellido' for #<Estudiante id: nil, nombres: "Andres", apellidos: "Valle", carrera: "ing telematica", carnet: "18-05090-1", fecha_nacimiento: "2001-02-18", edad: 18, celular: "76500269", created_at: nil, updated_at: nil>
+Did you mean?  apellidos
+               apellidos?
+               apellidos=):
+  
+app/controllers/estudiantes_controller.rb:27:in `block in create'
+app/controllers/estudiantes_controller.rb:26:in `create'
+Started GET "/" for 127.0.0.1 at 2023-10-02 10:51:10 -0600
+Processing by EstudiantesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/index.html.erb within layouts/application
+  [1m[36mEstudiante Load (7.3ms)[0m  [1m[34mSELECT "estudiantes".* FROM "estudiantes"[0m
+  ↳ app/views/estudiantes/index.html.erb:6
+  Rendered estudiantes/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 754)
+  Rendered layout layouts/application.html.erb (Duration: 21.4ms | Allocations: 2967)
+Completed 200 OK in 25ms (Views: 16.6ms | ActiveRecord: 7.3ms | Allocations: 3295)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2023-10-02 10:52:02 -0600
+Processing by EstudiantesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/index.html.erb within layouts/application
+  [1m[36mEstudiante Load (0.8ms)[0m  [1m[34mSELECT "estudiantes".* FROM "estudiantes"[0m
+  ↳ app/views/estudiantes/index.html.erb:6
+  Rendered estudiantes/index.html.erb within layouts/application (Duration: 23.5ms | Allocations: 1207)
+  Rendered layout layouts/application.html.erb (Duration: 87.3ms | Allocations: 14960)
+Completed 200 OK in 120ms (Views: 83.8ms | ActiveRecord: 7.2ms | Allocations: 16778)
+
+
+Started GET "/estudiantes/new" for 127.0.0.1 at 2023-10-02 10:53:22 -0600
+Processing by EstudiantesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/new.html.erb within layouts/application
+  Rendered estudiantes/_form.html.erb (Duration: 4.1ms | Allocations: 2401)
+  Rendered estudiantes/new.html.erb within layouts/application (Duration: 11.4ms | Allocations: 2510)
+  Rendered layout layouts/application.html.erb (Duration: 46.1ms | Allocations: 16160)
+Completed 200 OK in 96ms (Views: 49.6ms | ActiveRecord: 7.1ms | Allocations: 21015)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2023-10-02 10:53:26 -0600
+Processing by EstudiantesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/index.html.erb within layouts/application
+  [1m[36mEstudiante Load (0.2ms)[0m  [1m[34mSELECT "estudiantes".* FROM "estudiantes"[0m
+  ↳ app/views/estudiantes/index.html.erb:6
+  Rendered estudiantes/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 903)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 3101)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.2ms | Allocations: 3504)
+
+
+Started GET "/estudiantes/new" for 127.0.0.1 at 2023-10-02 10:53:29 -0600
+Processing by EstudiantesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/new.html.erb within layouts/application
+  Rendered estudiantes/_form.html.erb (Duration: 7.1ms | Allocations: 2130)
+  Rendered estudiantes/new.html.erb within layouts/application (Duration: 9.9ms | Allocations: 2215)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 4400)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms | Allocations: 4742)
+
+
+Started POST "/estudiantes" for 127.0.0.1 at 2023-10-02 10:54:26 -0600
+Processing by EstudiantesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "estudiante"=>{"nombres"=>"Marcel", "apellidos"=>"Sequiera", "carrera"=>"Telemac", "carnet"=>"18-01807-0", "fecha_nacimiento"=>"2002-08-21", "edad"=>"22", "celular"=>"78787878"}, "commit"=>"Create Estudiante"}
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/estudiantes_controller.rb:27:in `block in create'
+  [1m[36mEstudiante Create (7.8ms)[0m  [1m[32mINSERT INTO "estudiantes" ("nombres", "apellidos", "carrera", "carnet", "fecha_nacimiento", "edad", "celular", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombres", "Marcel"], ["apellidos", "Sequiera"], ["carrera", "Telemac"], ["carnet", "18-01807-0"], ["fecha_nacimiento", "2002-08-21"], ["edad", 22], ["celular", "78787878"], ["created_at", "2023-10-02 16:54:26.259057"], ["updated_at", "2023-10-02 16:54:26.259057"]]
+  ↳ app/controllers/estudiantes_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/estudiantes_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/estudiantes/1
+Completed 302 Found in 94ms (ActiveRecord: 13.5ms | Allocations: 3622)
+
+
+Started GET "/estudiantes/1" for 127.0.0.1 at 2023-10-02 10:54:26 -0600
+Processing by EstudiantesController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mEstudiante Load (0.2ms)[0m  [1m[34mSELECT "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/estudiantes_controller.rb:63:in `set_estudiante'
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/show.html.erb within layouts/application
+  Rendered estudiantes/_estudiante.html.erb (Duration: 3.2ms | Allocations: 445)
+  Rendered estudiantes/show.html.erb within layouts/application (Duration: 27.4ms | Allocations: 1967)
+  Rendered layout layouts/application.html.erb (Duration: 34.1ms | Allocations: 4259)
+Completed 200 OK in 100ms (Views: 35.8ms | ActiveRecord: 0.2ms | Allocations: 11763)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2023-10-02 10:54:49 -0600
+Processing by EstudiantesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/index.html.erb within layouts/application
+  [1m[36mEstudiante Load (0.1ms)[0m  [1m[34mSELECT "estudiantes".* FROM "estudiantes"[0m
+  ↳ app/views/estudiantes/index.html.erb:6
+  Rendered estudiantes/_estudiante.html.erb (Duration: 0.1ms | Allocations: 36)
+  Rendered estudiantes/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1012)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 3212)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.1ms | Allocations: 3573)
+
+
+Started GET "/estudiantes/new" for 127.0.0.1 at 2023-10-02 10:54:52 -0600
+Processing by EstudiantesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/new.html.erb within layouts/application
+  Rendered estudiantes/_form.html.erb (Duration: 6.0ms | Allocations: 2184)
+  Rendered estudiantes/new.html.erb within layouts/application (Duration: 12.6ms | Allocations: 2270)
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 4455)
+Completed 200 OK in 24ms (Views: 23.7ms | ActiveRecord: 0.0ms | Allocations: 4797)
+
+
+Started POST "/estudiantes" for 127.0.0.1 at 2023-10-02 10:55:25 -0600
+Processing by EstudiantesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "estudiante"=>{"nombres"=>"Kobe", "apellidos"=>"Oconnor", "carrera"=>"medicina", "carnet"=>"18-0440-0", "fecha_nacimiento"=>"", "edad"=>"25", "celular"=>""}, "commit"=>"Create Estudiante"}
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/new.html.erb within layouts/application
+  Rendered estudiantes/_form.html.erb (Duration: 16.1ms | Allocations: 4786)
+  Rendered estudiantes/new.html.erb within layouts/application (Duration: 17.6ms | Allocations: 4880)
+  Rendered layout layouts/application.html.erb (Duration: 27.8ms | Allocations: 7113)
+Completed 422 Unprocessable Entity in 39ms (Views: 29.1ms | ActiveRecord: 0.0ms | Allocations: 8826)
+
+
+Started POST "/estudiantes" for 127.0.0.1 at 2023-10-02 10:58:35 -0600
+Processing by EstudiantesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "estudiante"=>{"nombres"=>"Kobe", "apellidos"=>"Oconnor", "carrera"=>"medicina", "carnet"=>"18-0440-0", "fecha_nacimiento"=>"2002-08-21", "edad"=>"25", "celular"=>"noesnumero"}, "commit"=>"Create Estudiante"}
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/new.html.erb within layouts/application
+  Rendered estudiantes/_form.html.erb (Duration: 14.1ms | Allocations: 2908)
+  Rendered estudiantes/new.html.erb within layouts/application (Duration: 15.0ms | Allocations: 3002)
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 5235)
+Completed 422 Unprocessable Entity in 31ms (Views: 25.7ms | ActiveRecord: 0.0ms | Allocations: 6888)
+
+
+Started POST "/estudiantes" for 127.0.0.1 at 2023-10-02 10:58:53 -0600
+Processing by EstudiantesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "estudiante"=>{"nombres"=>"Kobe", "apellidos"=>"Oconnor", "carrera"=>"medicina", "carnet"=>"18-0440-0", "fecha_nacimiento"=>"2002-08-21", "edad"=>"25", "celular"=>"84847979"}, "commit"=>"Create Estudiante"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/estudiantes_controller.rb:27:in `block in create'
+  [1m[36mEstudiante Create (0.4ms)[0m  [1m[32mINSERT INTO "estudiantes" ("nombres", "apellidos", "carrera", "carnet", "fecha_nacimiento", "edad", "celular", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombres", "Kobe"], ["apellidos", "Oconnor"], ["carrera", "medicina"], ["carnet", "18-0440-0"], ["fecha_nacimiento", "2002-08-21"], ["edad", 25], ["celular", "84847979"], ["created_at", "2023-10-02 16:58:53.021909"], ["updated_at", "2023-10-02 16:58:53.021909"]]
+  ↳ app/controllers/estudiantes_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/estudiantes_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/estudiantes/2
+Completed 302 Found in 25ms (ActiveRecord: 5.4ms | Allocations: 2435)
+
+
+Started GET "/estudiantes/2" for 127.0.0.1 at 2023-10-02 10:58:53 -0600
+Processing by EstudiantesController#show as TURBO_STREAM
+  Parameters: {"id"=>"2"}
+  [1m[36mEstudiante Load (0.2ms)[0m  [1m[34mSELECT "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/estudiantes_controller.rb:63:in `set_estudiante'
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/show.html.erb within layouts/application
+  Rendered estudiantes/_estudiante.html.erb (Duration: 0.1ms | Allocations: 36)
+  Rendered estudiantes/show.html.erb within layouts/application (Duration: 2.7ms | Allocations: 638)
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 2815)
+Completed 200 OK in 27ms (Views: 23.0ms | ActiveRecord: 0.2ms | Allocations: 3594)
+
+
+Started DELETE "/estudiantes/2" for 127.0.0.1 at 2023-10-02 11:05:33 -0600
+Processing by EstudiantesController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+  [1m[36mEstudiante Load (0.1ms)[0m  [1m[34mSELECT "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/estudiantes_controller.rb:63:in `set_estudiante'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/estudiantes_controller.rb:52:in `destroy'
+  [1m[36mEstudiante Destroy (0.3ms)[0m  [1m[31mDELETE FROM "estudiantes" WHERE "estudiantes"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/estudiantes_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/estudiantes_controller.rb:52:in `destroy'
+Redirected to http://127.0.0.1:3000/estudiantes
+Completed 302 Found in 21ms (ActiveRecord: 5.3ms | Allocations: 2603)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2023-10-02 11:05:33 -0600
+Processing by EstudiantesController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/index.html.erb within layouts/application
+  [1m[36mEstudiante Load (0.2ms)[0m  [1m[34mSELECT "estudiantes".* FROM "estudiantes"[0m
+  ↳ app/views/estudiantes/index.html.erb:6
+  Rendered estudiantes/_estudiante.html.erb (Duration: 0.1ms | Allocations: 36)
+  Rendered estudiantes/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 975)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 3173)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.2ms | Allocations: 3505)
+
+
+Started GET "/estudiantes/new" for 127.0.0.1 at 2023-10-02 11:05:44 -0600
+Processing by EstudiantesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/new.html.erb within layouts/application
+  Rendered estudiantes/_form.html.erb (Duration: 6.4ms | Allocations: 2128)
+  Rendered estudiantes/new.html.erb within layouts/application (Duration: 10.6ms | Allocations: 2213)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 4398)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms | Allocations: 4734)
+
+
+Started POST "/estudiantes" for 127.0.0.1 at 2023-10-02 11:06:33 -0600
+Processing by EstudiantesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "estudiante"=>{"nombres"=>"Kobe", "apellidos"=>"Bryan", "carrera"=>"enfermeria", "carnet"=>"28288-0", "fecha_nacimiento"=>"2005-04-18", "edad"=>"18", "celular"=>"45452644"}, "commit"=>"Create Estudiante"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/estudiantes_controller.rb:27:in `block in create'
+  [1m[36mEstudiante Create (3.4ms)[0m  [1m[32mINSERT INTO "estudiantes" ("nombres", "apellidos", "carrera", "carnet", "fecha_nacimiento", "edad", "celular", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombres", "Kobe"], ["apellidos", "Bryan"], ["carrera", "enfermeria"], ["carnet", "28288-0"], ["fecha_nacimiento", "2005-04-18"], ["edad", 18], ["celular", "45452644"], ["created_at", "2023-10-02 17:06:33.559784"], ["updated_at", "2023-10-02 17:06:33.559784"]]
+  ↳ app/controllers/estudiantes_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/estudiantes_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/estudiantes/3
+Completed 302 Found in 29ms (ActiveRecord: 7.5ms | Allocations: 2331)
+
+
+Started GET "/estudiantes/3" for 127.0.0.1 at 2023-10-02 11:06:33 -0600
+Processing by EstudiantesController#show as TURBO_STREAM
+  Parameters: {"id"=>"3"}
+  [1m[36mEstudiante Load (0.1ms)[0m  [1m[34mSELECT "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/estudiantes_controller.rb:63:in `set_estudiante'
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/show.html.erb within layouts/application
+  Rendered estudiantes/_estudiante.html.erb (Duration: 0.2ms | Allocations: 36)
+  Rendered estudiantes/show.html.erb within layouts/application (Duration: 3.7ms | Allocations: 645)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 2822)
+Completed 200 OK in 20ms (Views: 15.3ms | ActiveRecord: 0.1ms | Allocations: 3590)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2023-10-02 11:06:36 -0600
+Processing by EstudiantesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/index.html.erb within layouts/application
+  [1m[36mEstudiante Load (0.2ms)[0m  [1m[34mSELECT "estudiantes".* FROM "estudiantes"[0m
+  ↳ app/views/estudiantes/index.html.erb:6
+  Rendered estudiantes/_estudiante.html.erb (Duration: 0.2ms | Allocations: 36)
+  Rendered estudiantes/_estudiante.html.erb (Duration: 0.2ms | Allocations: 35)
+  Rendered estudiantes/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 1052)
+  Rendered layout layouts/application.html.erb (Duration: 125.6ms | Allocations: 3261)
+Completed 200 OK in 130ms (Views: 127.4ms | ActiveRecord: 0.2ms | Allocations: 3591)
+
+
+Started GET "/estudiantes/3" for 127.0.0.1 at 2023-10-02 11:06:44 -0600
+Processing by EstudiantesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mEstudiante Load (0.1ms)[0m  [1m[34mSELECT "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/estudiantes_controller.rb:63:in `set_estudiante'
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/show.html.erb within layouts/application
+  Rendered estudiantes/_estudiante.html.erb (Duration: 0.2ms | Allocations: 36)
+  Rendered estudiantes/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 616)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 2796)
+Completed 200 OK in 23ms (Views: 15.2ms | ActiveRecord: 0.1ms | Allocations: 3563)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2023-10-02 11:06:47 -0600
+Processing by EstudiantesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/index.html.erb within layouts/application
+  [1m[36mEstudiante Load (0.1ms)[0m  [1m[34mSELECT "estudiantes".* FROM "estudiantes"[0m
+  ↳ app/views/estudiantes/index.html.erb:6
+  Rendered estudiantes/_estudiante.html.erb (Duration: 0.2ms | Allocations: 36)
+  Rendered estudiantes/_estudiante.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered estudiantes/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1060)
+  Rendered layout layouts/application.html.erb (Duration: 23.9ms | Allocations: 3258)
+Completed 200 OK in 27ms (Views: 26.6ms | ActiveRecord: 0.1ms | Allocations: 3587)
+
+
+Started GET "/" for 127.0.0.1 at 2023-10-04 09:50:24 -0600
+Processing by EstudiantesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/index.html.erb within layouts/application
+  [1m[36mEstudiante Load (2.0ms)[0m  [1m[34mSELECT "estudiantes".* FROM "estudiantes"[0m
+  ↳ app/views/estudiantes/index.html.erb:6
+  Rendered estudiantes/_estudiante.html.erb (Duration: 40.8ms | Allocations: 36)
+  Rendered estudiantes/_estudiante.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered estudiantes/index.html.erb within layouts/application (Duration: 682.4ms | Allocations: 1225)
+  Rendered layout layouts/application.html.erb (Duration: 1121.4ms | Allocations: 3426)
+Completed 200 OK in 1464ms (Views: 1161.3ms | ActiveRecord: 40.7ms | Allocations: 3754)
+
+
+Started GET "/estudiantes/new" for 127.0.0.1 at 2023-10-04 09:52:49 -0600
+Processing by EstudiantesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/new.html.erb within layouts/application
+  Rendered estudiantes/_form.html.erb (Duration: 369.6ms | Allocations: 2137)
+  Rendered estudiantes/new.html.erb within layouts/application (Duration: 383.0ms | Allocations: 2222)
+  Rendered layout layouts/application.html.erb (Duration: 438.7ms | Allocations: 4410)
+Completed 200 OK in 500ms (Views: 450.3ms | ActiveRecord: 0.0ms | Allocations: 4746)
+
+
+Started POST "/estudiantes" for 127.0.0.1 at 2023-10-04 09:53:16 -0600
+Processing by EstudiantesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "estudiante"=>{"nombres"=>"Ervin", "apellidos"=>"Ismael", "carrera"=>"Telematica", "carnet"=>"", "fecha_nacimiento"=>"", "edad"=>"", "celular"=>""}, "commit"=>"Create Estudiante"}
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/new.html.erb within layouts/application
+  Rendered estudiantes/_form.html.erb (Duration: 248.4ms | Allocations: 6386)
+  Rendered estudiantes/new.html.erb within layouts/application (Duration: 251.0ms | Allocations: 6480)
+  Rendered layout layouts/application.html.erb (Duration: 315.7ms | Allocations: 8725)
+Completed 422 Unprocessable Entity in 531ms (Views: 324.4ms | ActiveRecord: 0.0ms | Allocations: 10383)
+
+
+Started POST "/estudiantes" for 127.0.0.1 at 2023-10-04 09:53:36 -0600
+Processing by EstudiantesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "estudiante"=>{"nombres"=>"Ervin", "apellidos"=>"Ismael", "carrera"=>"Telematica", "carnet"=>"151514", "fecha_nacimiento"=>"2001-02-18", "edad"=>"22", "celular"=>"sdasd54"}, "commit"=>"Create Estudiante"}
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/new.html.erb within layouts/application
+  Rendered estudiantes/_form.html.erb (Duration: 44.8ms | Allocations: 2906)
+  Rendered estudiantes/new.html.erb within layouts/application (Duration: 45.7ms | Allocations: 3000)
+  Rendered layout layouts/application.html.erb (Duration: 67.9ms | Allocations: 5233)
+Completed 422 Unprocessable Entity in 89ms (Views: 69.6ms | ActiveRecord: 0.0ms | Allocations: 6884)
+
+
+Started POST "/estudiantes" for 127.0.0.1 at 2023-10-04 09:53:47 -0600
+Processing by EstudiantesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "estudiante"=>{"nombres"=>"Ervin", "apellidos"=>"Ismael", "carrera"=>"Telematica", "carnet"=>"151514", "fecha_nacimiento"=>"2001-02-18", "edad"=>"22", "celular"=>"854544"}, "commit"=>"Create Estudiante"}
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/estudiantes_controller.rb:27:in `block in create'
+  [1m[36mEstudiante Create (3.1ms)[0m  [1m[32mINSERT INTO "estudiantes" ("nombres", "apellidos", "carrera", "carnet", "fecha_nacimiento", "edad", "celular", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombres", "Ervin"], ["apellidos", "Ismael"], ["carrera", "Telematica"], ["carnet", "151514"], ["fecha_nacimiento", "2001-02-18"], ["edad", 22], ["celular", "854544"], ["created_at", "2023-10-04 15:53:47.393468"], ["updated_at", "2023-10-04 15:53:47.393468"]]
+  ↳ app/controllers/estudiantes_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (8.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/estudiantes_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/estudiantes/4
+Completed 302 Found in 245ms (ActiveRecord: 13.5ms | Allocations: 2335)
+
+
+Started GET "/estudiantes/4" for 127.0.0.1 at 2023-10-04 09:53:47 -0600
+Processing by EstudiantesController#show as TURBO_STREAM
+  Parameters: {"id"=>"4"}
+  [1m[36mEstudiante Load (0.4ms)[0m  [1m[34mSELECT "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/estudiantes_controller.rb:63:in `set_estudiante'
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/show.html.erb within layouts/application
+  Rendered estudiantes/_estudiante.html.erb (Duration: 1.0ms | Allocations: 36)
+  Rendered estudiantes/show.html.erb within layouts/application (Duration: 94.7ms | Allocations: 657)
+  Rendered layout layouts/application.html.erb (Duration: 157.4ms | Allocations: 2834)
+Completed 200 OK in 187ms (Views: 159.5ms | ActiveRecord: 0.4ms | Allocations: 3647)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2023-10-04 09:53:55 -0600
+Processing by EstudiantesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/index.html.erb within layouts/application
+  [1m[36mEstudiante Load (0.2ms)[0m  [1m[34mSELECT "estudiantes".* FROM "estudiantes"[0m
+  ↳ app/views/estudiantes/index.html.erb:6
+  Rendered estudiantes/_estudiante.html.erb (Duration: 0.2ms | Allocations: 36)
+  Rendered estudiantes/_estudiante.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered estudiantes/_estudiante.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered estudiantes/index.html.erb within layouts/application (Duration: 48.2ms | Allocations: 1202)
+  Rendered layout layouts/application.html.erb (Duration: 75.7ms | Allocations: 3400)
+Completed 200 OK in 78ms (Views: 76.9ms | ActiveRecord: 0.2ms | Allocations: 3729)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2023-10-04 09:59:22 -0600
+Processing by EstudiantesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/index.html.erb within layouts/application
+  [1m[36mEstudiante Load (0.3ms)[0m  [1m[34mSELECT "estudiantes".* FROM "estudiantes"[0m
+  ↳ app/views/estudiantes/index.html.erb:6
+  Rendered estudiantes/_estudiante.html.erb (Duration: 7.1ms | Allocations: 73)
+  Rendered estudiantes/_estudiante.html.erb (Duration: 5.5ms | Allocations: 35)
+  Rendered estudiantes/_estudiante.html.erb (Duration: 0.2ms | Allocations: 35)
+  Rendered estudiantes/index.html.erb within layouts/application (Duration: 228.7ms | Allocations: 4593)
+  Rendered layout layouts/application.html.erb (Duration: 416.5ms | Allocations: 18341)
+Completed 200 OK in 493ms (Views: 417.4ms | ActiveRecord: 23.9ms | Allocations: 20259)
+
+
+Started GET "/estudiantes/new" for 127.0.0.1 at 2023-10-04 09:59:28 -0600
+Processing by EstudiantesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/new.html.erb within layouts/application
+  Rendered estudiantes/_form.html.erb (Duration: 15.5ms | Allocations: 2265)
+  Rendered estudiantes/new.html.erb within layouts/application (Duration: 16.4ms | Allocations: 2354)
+  Rendered layout layouts/application.html.erb (Duration: 31.1ms | Allocations: 4541)
+Completed 200 OK in 32ms (Views: 31.7ms | ActiveRecord: 0.0ms | Allocations: 4908)
+
+
+Started POST "/estudiantes" for 127.0.0.1 at 2023-10-04 10:00:27 -0600
+Processing by EstudiantesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "estudiante"=>{"nombres"=>"Arleth", "apellidos"=>"RIvera", "carrera"=>"Contabilidad", "carnet"=>"18-04587", "fecha_nacimiento"=>"2001-06-01", "edad"=>"25", "celular"=>"48489898"}, "commit"=>"Create Estudiante"}
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/new.html.erb within layouts/application
+  Rendered estudiantes/_form.html.erb (Duration: 62.8ms | Allocations: 2620)
+  Rendered estudiantes/new.html.erb within layouts/application (Duration: 63.5ms | Allocations: 2715)
+  Rendered layout layouts/application.html.erb (Duration: 89.5ms | Allocations: 4952)
+Completed 422 Unprocessable Entity in 102ms (Views: 92.2ms | ActiveRecord: 0.0ms | Allocations: 6414)
+
+
+Started POST "/estudiantes" for 127.0.0.1 at 2023-10-04 10:00:33 -0600
+Processing by EstudiantesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "estudiante"=>{"nombres"=>"Arleth", "apellidos"=>"RIvera", "carrera"=>"Contabilidad", "carnet"=>"18-04587-", "fecha_nacimiento"=>"2001-06-01", "edad"=>"25", "celular"=>"48489898"}, "commit"=>"Create Estudiante"}
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/new.html.erb within layouts/application
+  Rendered estudiantes/_form.html.erb (Duration: 23.2ms | Allocations: 2579)
+  Rendered estudiantes/new.html.erb within layouts/application (Duration: 24.0ms | Allocations: 2673)
+  Rendered layout layouts/application.html.erb (Duration: 47.1ms | Allocations: 4906)
+Completed 422 Unprocessable Entity in 54ms (Views: 48.1ms | ActiveRecord: 0.0ms | Allocations: 6166)
+
+
+Started POST "/estudiantes" for 127.0.0.1 at 2023-10-04 10:00:40 -0600
+Processing by EstudiantesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "estudiante"=>{"nombres"=>"Arleth", "apellidos"=>"RIvera", "carrera"=>"Contabilidad", "carnet"=>"18-04587-0", "fecha_nacimiento"=>"2001-06-01", "edad"=>"25", "celular"=>"48489898"}, "commit"=>"Create Estudiante"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/estudiantes_controller.rb:27:in `block in create'
+  [1m[36mEstudiante Create (0.7ms)[0m  [1m[32mINSERT INTO "estudiantes" ("nombres", "apellidos", "carrera", "carnet", "fecha_nacimiento", "edad", "celular", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombres", "Arleth"], ["apellidos", "RIvera"], ["carrera", "Contabilidad"], ["carnet", "18-04587-0"], ["fecha_nacimiento", "2001-06-01"], ["edad", 25], ["celular", "48489898"], ["created_at", "2023-10-04 16:00:40.994952"], ["updated_at", "2023-10-04 16:00:40.994952"]]
+  ↳ app/controllers/estudiantes_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (7.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/estudiantes_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/estudiantes/5
+Completed 302 Found in 32ms (ActiveRecord: 8.2ms | Allocations: 2437)
+
+
+Started GET "/estudiantes/5" for 127.0.0.1 at 2023-10-04 10:00:41 -0600
+Processing by EstudiantesController#show as TURBO_STREAM
+  Parameters: {"id"=>"5"}
+  [1m[36mEstudiante Load (0.2ms)[0m  [1m[34mSELECT "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/estudiantes_controller.rb:63:in `set_estudiante'
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/show.html.erb within layouts/application
+  Rendered estudiantes/_estudiante.html.erb (Duration: 0.1ms | Allocations: 36)
+  Rendered estudiantes/show.html.erb within layouts/application (Duration: 11.1ms | Allocations: 663)
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 2840)
+Completed 200 OK in 46ms (Views: 27.9ms | ActiveRecord: 0.2ms | Allocations: 4279)
+
+
+Started GET "/estudiantes/5/edit" for 127.0.0.1 at 2023-10-04 10:00:45 -0600
+Processing by EstudiantesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mEstudiante Load (0.1ms)[0m  [1m[34mSELECT "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/estudiantes_controller.rb:63:in `set_estudiante'
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/edit.html.erb within layouts/application
+  Rendered estudiantes/_form.html.erb (Duration: 32.1ms | Allocations: 2278)
+  Rendered estudiantes/edit.html.erb within layouts/application (Duration: 52.6ms | Allocations: 2605)
+  Rendered layout layouts/application.html.erb (Duration: 110.8ms | Allocations: 4782)
+Completed 200 OK in 138ms (Views: 126.9ms | ActiveRecord: 0.1ms | Allocations: 5618)
+
+
+Started PATCH "/estudiantes/5" for 127.0.0.1 at 2023-10-04 10:00:49 -0600
+Processing by EstudiantesController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "estudiante"=>{"nombres"=>"Arleth", "apellidos"=>"RIvera", "carrera"=>"Contabilidad", "carnet"=>"1-04587-0", "fecha_nacimiento"=>"2001-06-01", "edad"=>"25", "celular"=>"48489898"}, "commit"=>"Update Estudiante", "id"=>"5"}
+  [1m[36mEstudiante Load (0.1ms)[0m  [1m[34mSELECT "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/estudiantes_controller.rb:63:in `set_estudiante'
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/edit.html.erb within layouts/application
+  Rendered estudiantes/_form.html.erb (Duration: 18.8ms | Allocations: 2635)
+  Rendered estudiantes/edit.html.erb within layouts/application (Duration: 19.4ms | Allocations: 2768)
+  Rendered layout layouts/application.html.erb (Duration: 50.6ms | Allocations: 5001)
+Completed 422 Unprocessable Entity in 75ms (Views: 54.7ms | ActiveRecord: 0.1ms | Allocations: 7053)
+
+
+Started PATCH "/estudiantes/5" for 127.0.0.1 at 2023-10-04 10:01:03 -0600
+Processing by EstudiantesController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "estudiante"=>{"nombres"=>"Arleth", "apellidos"=>"RIvera", "carrera"=>"Contabilidad", "carnet"=>"48456982", "fecha_nacimiento"=>"2001-06-01", "edad"=>"25", "celular"=>"48489898"}, "commit"=>"Update Estudiante", "id"=>"5"}
+  [1m[36mEstudiante Load (0.1ms)[0m  [1m[34mSELECT "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/estudiantes_controller.rb:63:in `set_estudiante'
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/edit.html.erb within layouts/application
+  Rendered estudiantes/_form.html.erb (Duration: 19.2ms | Allocations: 2635)
+  Rendered estudiantes/edit.html.erb within layouts/application (Duration: 19.8ms | Allocations: 2768)
+  Rendered layout layouts/application.html.erb (Duration: 49.1ms | Allocations: 5001)
+Completed 422 Unprocessable Entity in 64ms (Views: 50.8ms | ActiveRecord: 0.1ms | Allocations: 7028)
+
+
+Started PATCH "/estudiantes/5" for 127.0.0.1 at 2023-10-04 10:01:11 -0600
+Processing by EstudiantesController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "estudiante"=>{"nombres"=>"Arleth", "apellidos"=>"RIvera", "carrera"=>"Contabilidad", "carnet"=>"18-48480-0", "fecha_nacimiento"=>"2001-06-01", "edad"=>"25", "celular"=>"48489898"}, "commit"=>"Update Estudiante", "id"=>"5"}
+  [1m[36mEstudiante Load (0.1ms)[0m  [1m[34mSELECT "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/estudiantes_controller.rb:63:in `set_estudiante'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/estudiantes_controller.rb:40:in `block in update'
+  [1m[36mEstudiante Update (0.8ms)[0m  [1m[33mUPDATE "estudiantes" SET "carnet" = ?, "updated_at" = ? WHERE "estudiantes"."id" = ?[0m  [["carnet", "18-48480-0"], ["updated_at", "2023-10-04 16:01:11.123054"], ["id", 5]]
+  ↳ app/controllers/estudiantes_controller.rb:40:in `block in update'
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/estudiantes_controller.rb:40:in `block in update'
+Redirected to http://127.0.0.1:3000/estudiantes/5
+Completed 302 Found in 49ms (ActiveRecord: 6.0ms | Allocations: 2947)
+
+
+Started GET "/estudiantes/5" for 127.0.0.1 at 2023-10-04 10:01:11 -0600
+Processing by EstudiantesController#show as TURBO_STREAM
+  Parameters: {"id"=>"5"}
+  [1m[36mEstudiante Load (0.2ms)[0m  [1m[34mSELECT "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/estudiantes_controller.rb:63:in `set_estudiante'
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/show.html.erb within layouts/application
+  Rendered estudiantes/_estudiante.html.erb (Duration: 0.2ms | Allocations: 36)
+  Rendered estudiantes/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 641)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 2818)
+Completed 200 OK in 25ms (Views: 15.9ms | ActiveRecord: 0.2ms | Allocations: 3586)
+
+
+Started GET "/estudiantes" for 127.0.0.1 at 2023-10-04 10:01:35 -0600
+Processing by EstudiantesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/index.html.erb within layouts/application
+  [1m[36mEstudiante Load (0.3ms)[0m  [1m[34mSELECT "estudiantes".* FROM "estudiantes"[0m
+  ↳ app/views/estudiantes/index.html.erb:6
+  Rendered estudiantes/_estudiante.html.erb (Duration: 0.1ms | Allocations: 36)
+  Rendered estudiantes/_estudiante.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered estudiantes/_estudiante.html.erb (Duration: 0.2ms | Allocations: 35)
+  Rendered estudiantes/_estudiante.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered estudiantes/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1347)
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 3545)
+Completed 200 OK in 26ms (Views: 24.9ms | ActiveRecord: 0.3ms | Allocations: 3875)
+
+
+Started GET "/estudiantes/new" for 127.0.0.1 at 2023-10-04 10:01:50 -0600
+Processing by EstudiantesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/new.html.erb within layouts/application
+  Rendered estudiantes/_form.html.erb (Duration: 16.3ms | Allocations: 2133)
+  Rendered estudiantes/new.html.erb within layouts/application (Duration: 16.6ms | Allocations: 2218)
+  Rendered layout layouts/application.html.erb (Duration: 32.9ms | Allocations: 4403)
+Completed 200 OK in 36ms (Views: 35.6ms | ActiveRecord: 0.0ms | Allocations: 4739)
+
+
+Started POST "/estudiantes" for 127.0.0.1 at 2023-10-04 10:03:21 -0600
+Processing by EstudiantesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "estudiante"=>{"nombres"=>"Pol", "apellidos"=>"Drogon", "carrera"=>"Matematicas", "carnet"=>"1-0500-", "fecha_nacimiento"=>"2001-02-15", "edad"=>"22", "celular"=>"789456"}, "commit"=>"Create Estudiante"}
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/new.html.erb within layouts/application
+  Rendered estudiantes/_form.html.erb (Duration: 27.2ms | Allocations: 2579)
+  Rendered estudiantes/new.html.erb within layouts/application (Duration: 28.3ms | Allocations: 2674)
+  Rendered layout layouts/application.html.erb (Duration: 55.0ms | Allocations: 4907)
+Completed 422 Unprocessable Entity in 61ms (Views: 57.3ms | ActiveRecord: 0.0ms | Allocations: 6165)
+
+
+Started POST "/estudiantes" for 127.0.0.1 at 2023-10-04 10:03:29 -0600
+Processing by EstudiantesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "estudiante"=>{"nombres"=>"Pol", "apellidos"=>"Drogon", "carrera"=>"Matematicas", "carnet"=>"18-0500-0", "fecha_nacimiento"=>"2001-02-15", "edad"=>"22", "celular"=>"789456"}, "commit"=>"Create Estudiante"}
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/new.html.erb within layouts/application
+  Rendered estudiantes/_form.html.erb (Duration: 36.7ms | Allocations: 2579)
+  Rendered estudiantes/new.html.erb within layouts/application (Duration: 37.4ms | Allocations: 2673)
+  Rendered layout layouts/application.html.erb (Duration: 103.4ms | Allocations: 4906)
+Completed 422 Unprocessable Entity in 111ms (Views: 104.6ms | ActiveRecord: 0.0ms | Allocations: 6148)
+
+
+Started POST "/estudiantes" for 127.0.0.1 at 2023-10-04 10:03:33 -0600
+Processing by EstudiantesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "estudiante"=>{"nombres"=>"Pol", "apellidos"=>"Drogon", "carrera"=>"Matematicas", "carnet"=>"18-05000-0", "fecha_nacimiento"=>"2001-02-15", "edad"=>"22", "celular"=>"789456"}, "commit"=>"Create Estudiante"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/estudiantes_controller.rb:27:in `block in create'
+  [1m[36mEstudiante Create (1.0ms)[0m  [1m[32mINSERT INTO "estudiantes" ("nombres", "apellidos", "carrera", "carnet", "fecha_nacimiento", "edad", "celular", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombres", "Pol"], ["apellidos", "Drogon"], ["carrera", "Matematicas"], ["carnet", "18-05000-0"], ["fecha_nacimiento", "2001-02-15"], ["edad", 22], ["celular", "789456"], ["created_at", "2023-10-04 16:03:33.746958"], ["updated_at", "2023-10-04 16:03:33.746958"]]
+  ↳ app/controllers/estudiantes_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (7.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/estudiantes_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/estudiantes/6
+Completed 302 Found in 37ms (ActiveRecord: 8.2ms | Allocations: 2342)
+
+
+Started GET "/estudiantes/6" for 127.0.0.1 at 2023-10-04 10:03:33 -0600
+Processing by EstudiantesController#show as TURBO_STREAM
+  Parameters: {"id"=>"6"}
+  [1m[36mEstudiante Load (0.2ms)[0m  [1m[34mSELECT "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/estudiantes_controller.rb:63:in `set_estudiante'
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/show.html.erb within layouts/application
+  Rendered estudiantes/_estudiante.html.erb (Duration: 0.1ms | Allocations: 36)
+  Rendered estudiantes/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 657)
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 2834)
+Completed 200 OK in 28ms (Views: 20.8ms | ActiveRecord: 0.2ms | Allocations: 3602)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-09 16:32:06 -0600
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EstudiantesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering estudiantes/index.html.erb within layouts/application
+  [1m[36mEstudiante Load (1.8ms)[0m  [1m[34mSELECT "estudiantes".* FROM "estudiantes"[0m
+  ↳ app/views/estudiantes/index.html.erb:6
+  Rendered estudiantes/_estudiante.html.erb (Duration: 1.7ms | Allocations: 403)
+  Rendered estudiantes/_estudiante.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered estudiantes/_estudiante.html.erb (Duration: 0.2ms | Allocations: 35)
+  Rendered estudiantes/_estudiante.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered estudiantes/_estudiante.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered estudiantes/index.html.erb within layouts/application (Duration: 78.1ms | Allocations: 10224)
+  Rendered layout layouts/application.html.erb (Duration: 1425.8ms | Allocations: 98336)
+Completed 200 OK in 1540ms (Views: 1485.6ms | ActiveRecord: 2.5ms | Allocations: 106093)
+
+
