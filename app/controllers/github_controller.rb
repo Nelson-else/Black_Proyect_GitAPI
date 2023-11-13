@@ -37,7 +37,7 @@ class GithubController < ApplicationController
           success = system(command)
       
           if success
-            @success_message = "Repositorio '#{repo_name}' clonado con éxito en '#{repo_path}'."
+            @success_message = "Nombre de usuario: '#{username}'. <br> <br> Repositorio: '#{repo_name}' <br> <br> Clonado con éxito en: '#{repo_path}'."
           else
             @error_message = "Error al clonar el repositorio '#{repo_name}'."
           end

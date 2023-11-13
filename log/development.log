@@ -2101,3 +2101,381 @@ Processing by GithubController#download_repository as HTML
 Completed 200 OK in 5965ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 3264)
 
 
+Started GET "/styles.css" for 127.0.0.1 at 2023-11-12 21:22:52 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/github/download_repository?repo_name=Plugin_Pasarela_Pago_Plugin_Skeleton&username=Nelson-else" for 127.0.0.1 at 2023-11-12 21:22:56 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"Plugin_Pasarela_Pago_Plugin_Skeleton", "username"=>"Nelson-else"}
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 63.0ms | Allocations: 14061)
+Completed 200 OK in 6055ms (Views: 65.7ms | ActiveRecord: 0.0ms | Allocations: 14817)
+
+
+Started GET "/github/download_repository?repo_name=Plugin_Pasarela_Pago_Plugin_Skeleton&username=Nelson-else" for 127.0.0.1 at 2023-11-12 21:23:45 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"Plugin_Pasarela_Pago_Plugin_Skeleton", "username"=>"Nelson-else"}
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.1ms | Allocations: 14)
+  Rendered layout layouts/application.html.erb (Duration: 41.8ms | Allocations: 14030)
+Completed 200 OK in 53ms (Views: 46.9ms | ActiveRecord: 0.0ms | Allocations: 14767)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-12 21:23:47 -0600
+Processing by GithubController#repositories as HTML
+Completed 500 Internal Server Error in 15292ms (ActiveRecord: 0.0ms | Allocations: 781)
+
+
+  
+SocketError (Failed to open TCP connection to api.github.com:443 (getaddrinfo: Temporary failure in name resolution)):
+  
+app/controllers/github_controller.rb:12:in `repositories'
+Started GET "/" for 127.0.0.1 at 2023-11-12 21:25:54 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 3.8ms | Allocations: 600)
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | Allocations: 2921)
+Completed 200 OK in 905ms (Views: 22.6ms | ActiveRecord: 0.0ms | Allocations: 5031)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2023-11-12 21:25:55 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/github/download_repository?repo_name=Socket_udp&username=Nelson-else" for 127.0.0.1 at 2023-11-12 21:26:00 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"Socket_udp", "username"=>"Nelson-else"}
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 2322)
+Completed 200 OK in 6052ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 2691)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-12 21:27:31 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 1.1ms | Allocations: 634)
+  Rendered layout layouts/application.html.erb (Duration: 55.8ms | Allocations: 14663)
+Completed 200 OK in 10702ms (Views: 59.5ms | ActiveRecord: 0.0ms | Allocations: 17214)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2023-11-12 21:27:42 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/github/download_repository?repo_name=Calculator_rpc&username=Nelson-else" for 127.0.0.1 at 2023-11-12 21:28:21 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"Calculator_rpc", "username"=>"Nelson-else"}
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 2317)
+Completed 200 OK in 11101ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 2717)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-12 21:28:51 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 1.8ms | Allocations: 634)
+  Rendered layout layouts/application.html.erb (Duration: 44.5ms | Allocations: 14680)
+Completed 200 OK in 1436ms (Views: 49.0ms | ActiveRecord: 0.0ms | Allocations: 17211)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2023-11-12 21:28:53 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/github/download_repository?repo_name=CPU_monitor&username=Nelson-else" for 127.0.0.1 at 2023-11-12 21:28:54 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"CPU_monitor", "username"=>"Nelson-else"}
+Completed 500 Internal Server Error in 810ms (ActiveRecord: 0.0ms | Allocations: 3477)
+
+
+  
+NoMethodError (undefined method `success' for #<GithubController:0x0000000001c548>
+
+          if success{
+             ^^^^^^^):
+  
+app/controllers/github_controller.rb:39:in `download_repository'
+Started GET "/" for 127.0.0.1 at 2023-11-12 21:32:19 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 1.7ms | Allocations: 634)
+  Rendered layout layouts/application.html.erb (Duration: 77.2ms | Allocations: 14671)
+Completed 200 OK in 5601ms (Views: 80.0ms | ActiveRecord: 0.0ms | Allocations: 17207)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2023-11-12 21:32:25 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/github/download_repository?repo_name=Practice4-tcp&username=Nelson-else" for 127.0.0.1 at 2023-11-12 21:32:28 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"Practice4-tcp", "username"=>"Nelson-else"}
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 2307)
+Completed 200 OK in 20077ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 2728)
+
+
+Started GET "/github/download_repository?repo_name=Practice4-tcp&username=Nelson-else" for 127.0.0.1 at 2023-11-12 21:32:53 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"Practice4-tcp", "username"=>"Nelson-else"}
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 2307)
+Completed 200 OK in 10903ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 2685)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-12 21:33:16 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 1.2ms | Allocations: 564)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 2865)
+Completed 200 OK in 585ms (Views: 18.7ms | ActiveRecord: 0.0ms | Allocations: 5001)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2023-11-12 21:33:16 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/" for 127.0.0.1 at 2023-11-12 21:33:58 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 1.6ms | Allocations: 634)
+  Rendered layout layouts/application.html.erb (Duration: 63.6ms | Allocations: 14671)
+Completed 200 OK in 614ms (Views: 67.9ms | ActiveRecord: 0.0ms | Allocations: 17192)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2023-11-12 21:33:59 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/github/download_repository?repo_name=Socket_udp&username=Nelson-else" for 127.0.0.1 at 2023-11-12 21:34:04 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"Socket_udp", "username"=>"Nelson-else"}
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 2310)
+Completed 200 OK in 5991ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 2778)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2023-11-12 21:36:00 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/" for 127.0.0.1 at 2023-11-12 21:36:02 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 2.8ms | Allocations: 634)
+  Rendered layout layouts/application.html.erb (Duration: 713.9ms | Allocations: 14698)
+Completed 200 OK in 1271ms (Views: 718.7ms | ActiveRecord: 0.0ms | Allocations: 17220)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2023-11-12 21:36:04 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/github/download_repository?repo_name=CPU_monitor&username=Nelson-else" for 127.0.0.1 at 2023-11-12 21:36:07 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"CPU_monitor", "username"=>"Nelson-else"}
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 2314)
+Completed 200 OK in 16ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 2686)
+
+
+Started GET "/github/download_repository?repo_name=CPU_monitor&username=Nelson-else" for 127.0.0.1 at 2023-11-12 21:36:09 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"CPU_monitor", "username"=>"Nelson-else"}
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 2303)
+Completed 200 OK in 22ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 2649)
+
+
+Started GET "/github/download_repository?repo_name=CPU_monitor&username=Nelson-else" for 127.0.0.1 at 2023-11-12 21:36:11 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"CPU_monitor", "username"=>"Nelson-else"}
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 2294)
+Completed 200 OK in 14ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 2640)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-12 21:36:19 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 1.1ms | Allocations: 564)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 2889)
+Completed 200 OK in 407ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 5015)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2023-11-12 21:36:20 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/github/download_repository?repo_name=Calculator_rpc&username=Nelson-else" for 127.0.0.1 at 2023-11-12 21:36:21 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"Calculator_rpc", "username"=>"Nelson-else"}
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 2313)
+Completed 200 OK in 17ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 2662)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2023-11-12 21:36:23 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/github/download_repository?repo_name=RPC-calculator&username=Nelson-else" for 127.0.0.1 at 2023-11-12 21:36:24 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"RPC-calculator", "username"=>"Nelson-else"}
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 2310)
+Completed 200 OK in 5804ms (Views: 16.5ms | ActiveRecord: 0.0ms | Allocations: 2671)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2023-11-12 21:36:33 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/github/download_repository?repo_name=Socket_udp&username=Nelson-else" for 127.0.0.1 at 2023-11-12 21:36:35 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"Socket_udp", "username"=>"Nelson-else"}
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 2337)
+Completed 200 OK in 848ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 2691)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-12 21:40:20 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 2.1ms | Allocations: 925)
+  Rendered layout layouts/application.html.erb (Duration: 55.9ms | Allocations: 15144)
+Completed 200 OK in 471ms (Views: 58.6ms | ActiveRecord: 0.0ms | Allocations: 18080)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2023-11-12 21:40:21 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/" for 127.0.0.1 at 2023-11-12 21:40:41 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 1.2ms | Allocations: 564)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 2887)
+Completed 200 OK in 431ms (Views: 14.3ms | ActiveRecord: 0.0ms | Allocations: 5037)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2023-11-12 21:40:42 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/github/download_repository?repo_name=Calculator_rpc&username=Nelson-else" for 127.0.0.1 at 2023-11-12 21:40:48 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"Calculator_rpc", "username"=>"Nelson-else"}
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 2.5ms | Allocations: 305)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 2616)
+Completed 200 OK in 11023ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 3133)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2023-11-12 21:42:15 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/github/download_repository?repo_name=CPU_monitor&username=Nelson-else" for 127.0.0.1 at 2023-11-12 21:42:16 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"CPU_monitor", "username"=>"Nelson-else"}
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 42.5ms | Allocations: 14053)
+Completed 200 OK in 10858ms (Views: 46.1ms | ActiveRecord: 0.0ms | Allocations: 14821)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2023-11-12 21:42:50 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/github/download_repository?repo_name=EcoRemotoNoConect&username=Nelson-else" for 127.0.0.1 at 2023-11-12 21:42:52 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"EcoRemotoNoConect", "username"=>"Nelson-else"}
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 240.8ms | Allocations: 14067)
+Completed 200 OK in 1185ms (Views: 244.4ms | ActiveRecord: 0.0ms | Allocations: 14813)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2023-11-12 21:43:03 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/github/download_repository?repo_name=EcoRemotoNoConect&username=Nelson-else" for 127.0.0.1 at 2023-11-12 21:43:04 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"EcoRemotoNoConect", "username"=>"Nelson-else"}
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.1ms | Allocations: 14)
+  Rendered layout layouts/application.html.erb (Duration: 52.6ms | Allocations: 14025)
+Completed 200 OK in 58ms (Views: 55.0ms | ActiveRecord: 0.0ms | Allocations: 14763)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2023-11-12 21:43:14 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/github/download_repository?repo_name=EcoRemotoNoConect&username=Nelson-else" for 127.0.0.1 at 2023-11-12 21:43:16 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"EcoRemotoNoConect", "username"=>"Nelson-else"}
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 2307)
+Completed 200 OK in 976ms (Views: 22.2ms | ActiveRecord: 0.0ms | Allocations: 2682)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2023-11-12 21:46:08 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/github/download_repository?repo_name=RPC-calculator&username=Nelson-else" for 127.0.0.1 at 2023-11-12 21:46:11 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"RPC-calculator", "username"=>"Nelson-else"}
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 39.1ms | Allocations: 14073)
+Completed 200 OK in 10862ms (Views: 47.5ms | ActiveRecord: 0.0ms | Allocations: 14964)
+
+
