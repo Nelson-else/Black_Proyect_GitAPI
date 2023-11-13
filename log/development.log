@@ -2479,3 +2479,35 @@ Processing by GithubController#download_repository as HTML
 Completed 200 OK in 10862ms (Views: 47.5ms | ActiveRecord: 0.0ms | Allocations: 14964)
 
 
+Started GET "/" for 127.0.0.1 at 2023-11-12 21:48:13 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 3.7ms | Allocations: 923)
+  Rendered layout layouts/application.html.erb (Duration: 53.9ms | Allocations: 15048)
+Completed 200 OK in 611ms (Views: 56.8ms | ActiveRecord: 0.0ms | Allocations: 17983)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2023-11-12 21:48:14 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/github/download_repository?repo_name=Calculator_rpc&username=Nelson-else" for 127.0.0.1 at 2023-11-12 21:48:19 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"Calculator_rpc", "username"=>"Nelson-else"}
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.9ms | Allocations: 306)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 2606)
+Completed 200 OK in 10983ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 3058)
+
+
+Started GET "/github/download_repository" for 127.0.0.1 at 2023-11-12 21:49:28 -0600
+Processing by GithubController#download_repository as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 1.7ms | Allocations: 338)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 3113)
+Completed 200 OK in 21ms (Views: 18.4ms | ActiveRecord: 0.0ms | Allocations: 4034)
+
+
