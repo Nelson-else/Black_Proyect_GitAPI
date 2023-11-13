@@ -1,0 +1,19 @@
+<!-- app/views/github/new_repository.html.erb -->
+<div class="container">
+  <h1>Subir Nuevo Repositorio</h1>
+
+  <%= form_tag(github_upload_repository_path, multipart: true) do %>
+    <label for="repository_file">Seleccionar archivo del repositorio:</label>
+    <%= file_field_tag 'repository_file' %>
+
+    <%= submit_tag 'Subir Repositorio' %>
+  <% end %>
+
+  <% if @upload_success %>
+    <p class="success-message"><%= @upload_success %></p>
+  <% end %>
+
+  <% if @upload_error %>
+    <p class="error-message"><%= @upload_error %></p>
+  <% end %>
+</div>

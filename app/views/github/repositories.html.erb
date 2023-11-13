@@ -24,6 +24,9 @@
     <% else %>
       <p class="error-message"><%= @error_message %></p>
     <% end %>
+
+    <%= link_to 'Subir Nuevo Repositorio', new_repository_path, class: 'upload-button' %>
+
   </div>
 
 </body>

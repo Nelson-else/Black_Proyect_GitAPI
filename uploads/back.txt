@@ -1,0 +1,12 @@
+<!-- app/views/github/repositories.html.erb -->
+<h1>Repositorios de GitHub</h1>
+
+<% if @repositories %>
+  <ul>
+    <% @repositories.each do |repo| %>
+      <li><%= repo['name'] %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p><%= @error_message %></p>
+<% end %>

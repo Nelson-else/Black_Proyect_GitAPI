@@ -2511,3 +2511,856 @@ Processing by GithubController#download_repository as HTML
 Completed 200 OK in 21ms (Views: 18.4ms | ActiveRecord: 0.0ms | Allocations: 4034)
 
 
+Started GET "/" for 127.0.0.1 at 2023-11-13 08:59:07 -0600
+Processing by GithubController#repositories as HTML
+Completed 500 Internal Server Error in 272ms (ActiveRecord: 0.0ms | Allocations: 6123)
+
+
+  
+NoMethodError (undefined method `authenticate_user!' for #<GithubController:0x000000000487b0>
+
+              target.send(@method_name, &block)
+                    ^^^^^
+Did you mean?  authenticate_with_http_digest):
+  
+activesupport (7.0.8) lib/active_support/callbacks.rb:400:in `block in make_lambda'
+activesupport (7.0.8) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.8) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.8) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.8) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.8) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.8) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.8) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+actiontext (7.0.8) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.8) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.8) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.8) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.8) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.8) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.8) lib/action_controller/metal/rescue.rb:23:in `process_action'
+actionpack (7.0.8) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.8) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.8) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.8) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.8) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.8) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.8) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.8) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.8) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.8) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.8) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.8) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.8) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.8) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.8) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.8) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.8) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.8) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.8) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.8) lib/active_record/migration.rb:638:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.8) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.8) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.8) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.8) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.8) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.8) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.8) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.8) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.8) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.8) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/host_authorization.rb:138:in `call'
+railties (7.0.8) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2023-11-13 09:27:25 -0600
+Processing by GithubController#repositories as HTML
+Completed 500 Internal Server Error in 100ms (ActiveRecord: 0.0ms | Allocations: 6019)
+
+
+  
+NoMethodError (undefined method `authenticate_user!' for #<GithubController:0x00000000048b20>
+
+              target.send(@method_name, &block)
+                    ^^^^^
+Did you mean?  authenticate_with_http_digest):
+  
+activesupport (7.0.8) lib/active_support/callbacks.rb:400:in `block in make_lambda'
+activesupport (7.0.8) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.8) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.8) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.8) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.8) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.8) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.8) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+actiontext (7.0.8) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.8) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.8) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.8) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.8) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.8) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.8) lib/action_controller/metal/rescue.rb:23:in `process_action'
+actionpack (7.0.8) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.8) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.8) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.8) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.8) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.8) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.8) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.8) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.8) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.8) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.8) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.8) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.8) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.8) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.8) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.8) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.8) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.8) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.8) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.8) lib/active_record/migration.rb:638:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.8) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.8) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.8) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.8) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.8) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.8) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.8) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.8) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.8) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.8) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/host_authorization.rb:138:in `call'
+railties (7.0.8) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2023-11-13 09:27:43 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 4.7ms | Allocations: 922)
+  Rendered layout layouts/application.html.erb (Duration: 74.8ms | Allocations: 15149)
+Completed 200 OK in 5806ms (Views: 82.0ms | ActiveRecord: 0.0ms | Allocations: 18069)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-13 09:27:50 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 3.1ms | Allocations: 564)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 2877)
+Completed 200 OK in 384ms (Views: 16.4ms | ActiveRecord: 0.0ms | Allocations: 4985)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2023-11-13 09:27:51 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/github/new_repository" for 127.0.0.1 at 2023-11-13 09:28:33 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/github/new_repository"):
+  
+Started GET "/" for 127.0.0.1 at 2023-11-13 09:30:22 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 1.3ms | Allocations: 634)
+  Rendered layout layouts/application.html.erb (Duration: 46.8ms | Allocations: 14645)
+Completed 200 OK in 787ms (Views: 52.3ms | ActiveRecord: 0.0ms | Allocations: 17166)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2023-11-13 09:30:23 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/github/new_repository" for 127.0.0.1 at 2023-11-13 09:30:28 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/github/new_repository"):
+  
+Started GET "/github/upload_repository" for 127.0.0.1 at 2023-11-13 09:30:53 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/github/upload_repository"):
+  
+Started GET "/github/new_repository" for 127.0.0.1 at 2023-11-13 09:32:03 -0600
+Processing by GithubController#new_repository as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/new_repository.html.erb within layouts/application
+  Rendered github/new_repository.html.erb within layouts/application (Duration: 108.0ms | Allocations: 4769)
+  Rendered layout layouts/application.html.erb (Duration: 114.6ms | Allocations: 4857)
+Completed 500 Internal Server Error in 119ms (ActiveRecord: 0.0ms | Allocations: 5534)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `upload_repository_path' for #<ActionView::Base:0x00000000056798>
+
+  '.freeze;@output_buffer.append=  form_tag(upload_repository_path, multipart: true) do @output_buffer.safe_append='
+                                            ^^^^^^^^^^^^^^^^^^^^^^
+Did you mean?  download_repository_path):
+    2: <div class="container">
+    3:   <h1>Subir Nuevo Repositorio</h1>
+    4: 
+    5:   <%= form_tag(upload_repository_path, multipart: true) do %>
+    6:     <label for="repository_file">Seleccionar archivo del repositorio:</label>
+    7:     <%= file_field_tag 'repository_file' %>
+    8: 
+  
+app/views/github/new_repository.html.erb:5
+Started GET "/" for 127.0.0.1 at 2023-11-13 09:36:37 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 2.3ms | Allocations: 634)
+  Rendered layout layouts/application.html.erb (Duration: 77.0ms | Allocations: 14693)
+Completed 200 OK in 602ms (Views: 80.9ms | ActiveRecord: 0.0ms | Allocations: 17214)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2023-11-13 09:36:38 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/github/new_repository" for 127.0.0.1 at 2023-11-13 09:36:46 -0600
+Processing by GithubController#new_repository as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/new_repository.html.erb within layouts/application
+  Rendered github/new_repository.html.erb within layouts/application (Duration: 104.9ms | Allocations: 4479)
+  Rendered layout layouts/application.html.erb (Duration: 105.3ms | Allocations: 4559)
+Completed 500 Internal Server Error in 108ms (ActiveRecord: 0.0ms | Allocations: 4821)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `upload_repository_path' for #<ActionView::Base:0x0000000005b1f8>
+
+  '.freeze;@output_buffer.append=  form_tag(upload_repository_path, multipart: true) do @output_buffer.safe_append='
+                                            ^^^^^^^^^^^^^^^^^^^^^^
+Did you mean?  download_repository_path):
+    2: <div class="container">
+    3:   <h1>Subir Nuevo Repositorio</h1>
+    4: 
+    5:   <%= form_tag(upload_repository_path, multipart: true) do %>
+    6:     <label for="repository_file">Seleccionar archivo del repositorio:</label>
+    7:     <%= file_field_tag 'repository_file' %>
+    8: 
+  
+app/views/github/new_repository.html.erb:5
+Started GET "/github/new_repository" for 127.0.0.1 at 2023-11-13 09:37:21 -0600
+Processing by GithubController#new_repository as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/new_repository.html.erb within layouts/application
+  Rendered github/new_repository.html.erb within layouts/application (Duration: 101.5ms | Allocations: 4441)
+  Rendered layout layouts/application.html.erb (Duration: 104.8ms | Allocations: 4520)
+Completed 500 Internal Server Error in 107ms (ActiveRecord: 0.0ms | Allocations: 4754)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `upload_repository_path' for #<ActionView::Base:0x0000000005b4f0>
+
+  '.freeze;@output_buffer.append=  form_tag(upload_repository_path, multipart: true) do @output_buffer.safe_append='
+                                            ^^^^^^^^^^^^^^^^^^^^^^
+Did you mean?  download_repository_path):
+    2: <div class="container">
+    3:   <h1>Subir Nuevo Repositorio</h1>
+    4: 
+    5:   <%= form_tag(upload_repository_path, multipart: true) do %>
+    6:     <label for="repository_file">Seleccionar archivo del repositorio:</label>
+    7:     <%= file_field_tag 'repository_file' %>
+    8: 
+  
+app/views/github/new_repository.html.erb:5
+Started GET "/github/download_repository" for 127.0.0.1 at 2023-11-13 09:43:27 -0600
+Processing by GithubController#download_repository as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 2.4ms | Allocations: 305)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 2624)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms | Allocations: 2960)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-13 09:43:33 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 1.2ms | Allocations: 564)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 2874)
+Completed 200 OK in 792ms (Views: 14.9ms | ActiveRecord: 0.0ms | Allocations: 5011)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2023-11-13 09:43:34 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/github/download_repository?repo_name=Plugin_Pasarela_Pago_Plugin_Skeleton&username=Nelson-else" for 127.0.0.1 at 2023-11-13 09:43:39 -0600
+Processing by GithubController#download_repository as HTML
+  Parameters: {"repo_name"=>"Plugin_Pasarela_Pago_Plugin_Skeleton", "username"=>"Nelson-else"}
+  Rendering layout layouts/application.html.erb
+  Rendering github/download_repository.html.erb within layouts/application
+  Rendered github/download_repository.html.erb within layouts/application (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 2323)
+Completed 200 OK in 11200ms (Views: 16.3ms | ActiveRecord: 0.0ms | Allocations: 2718)
+
+
+Started GET "/github/new_repository" for 127.0.0.1 at 2023-11-13 09:44:48 -0600
+Processing by GithubController#new_repository as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/new_repository.html.erb within layouts/application
+  Rendered github/new_repository.html.erb within layouts/application (Duration: 105.4ms | Allocations: 4445)
+  Rendered layout layouts/application.html.erb (Duration: 105.7ms | Allocations: 4524)
+Completed 500 Internal Server Error in 107ms (ActiveRecord: 0.0ms | Allocations: 4758)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `upload_repository_path' for #<ActionView::Base:0x0000000005bb80>
+
+  '.freeze;@output_buffer.append=  form_tag(upload_repository_path, multipart: true) do @output_buffer.safe_append='
+                                            ^^^^^^^^^^^^^^^^^^^^^^
+Did you mean?  download_repository_path):
+    2: <div class="container">
+    3:   <h1>Subir Nuevo Repositorio</h1>
+    4: 
+    5:   <%= form_tag(upload_repository_path, multipart: true) do %>
+    6:     <label for="repository_file">Seleccionar archivo del repositorio:</label>
+    7:     <%= file_field_tag 'repository_file' %>
+    8: 
+  
+app/views/github/new_repository.html.erb:5
+Started GET "/github/new_repository" for 127.0.0.1 at 2023-11-13 09:46:28 -0600
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GithubController#new_repository as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/new_repository.html.erb within layouts/application
+  Rendered github/new_repository.html.erb within layouts/application (Duration: 109.0ms | Allocations: 5381)
+  Rendered layout layouts/application.html.erb (Duration: 111.7ms | Allocations: 5491)
+Completed 500 Internal Server Error in 140ms (ActiveRecord: 0.0ms | Allocations: 9578)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `upload_repository_path' for #<ActionView::Base:0x0000000000aff0>
+
+  '.freeze;@output_buffer.append=  form_tag(upload_repository_path, multipart: true) do @output_buffer.safe_append='
+                                            ^^^^^^^^^^^^^^^^^^^^^^
+Did you mean?  download_repository_path):
+    2: <div class="container">
+    3:   <h1>Subir Nuevo Repositorio</h1>
+    4: 
+    5:   <%= form_tag(upload_repository_path, multipart: true) do %>
+    6:     <label for="repository_file">Seleccionar archivo del repositorio:</label>
+    7:     <%= file_field_tag 'repository_file' %>
+    8: 
+  
+app/views/github/new_repository.html.erb:5
+Started GET "/github/new_repository" for 127.0.0.1 at 2023-11-13 09:52:20 -0600
+Processing by GithubController#new_repository as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/new_repository.html.erb within layouts/application
+  Rendered github/new_repository.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1275)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 1365)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 2265)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!-- app/views/github/new_repository.html.erb -->
+<div class="container">
+  <h1>Subir Nuevo Repositorio</h1>
+
+  <!--<%= form_tag(upload_repository_path, multipart: true) do %>-->
+    <%= form_tag(new_repository_path, multipart: true) do %>
+    <label for="repository_file">Seleccionar archivo del repositorio:</label>
+    <%= file_field_tag 'repository_file' %>
+
+    <%= submit_tag 'Subir Repositorio' %>
+  <% end %>
+
+  <% if @upload_success %>
+    <p class="success-message"><%= @upload_success %></p>
+  <% end %>
+
+  <% if @upload_error %>
+    <p class="error-message"><%= @upload_error %></p>
+  <% end %>
+</div>
+
+):
+1:    <!-- app/views/github/new_repository.html.erb -->
+2:    <div class="container">
+3:      <h1>Subir Nuevo Repositorio</h1>
+4:    
+5:      <!--<%= form_tag(upload_repository_path, multipart: true) do %>-->
+6:        <%= form_tag(new_repository_path, multipart: true) do %>
+7:        <label for="repository_file">Seleccionar archivo del repositorio:</label>
+8:        <%= file_field_tag 'repository_file' %>
+9:    
+10:        <%= submit_tag 'Subir Repositorio' %>
+11:      <% end %>
+12:    
+13:      <% if @upload_success %>
+14:        <p class="success-message"><%= @upload_success %></p>
+15:      <% end %>
+16:    
+17:      <% if @upload_error %>
+18:        <p class="error-message"><%= @upload_error %></p>
+19:      <% end %>
+20:    </div>
+  
+app/views/github/new_repository.html.erb:23: syntax error, unexpected end-of-input, expecting `end'
+app/views/github/new_repository.html.erb:23: syntax error, unexpected end-of-input, expecting `end'
+app/views/github/new_repository.html.erb:23: syntax error, unexpected end-of-input, expecting `end'
+app/views/github/new_repository.html.erb:23: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/github/new_repository" for 127.0.0.1 at 2023-11-13 09:53:56 -0600
+Processing by GithubController#new_repository as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/new_repository.html.erb within layouts/application
+  Rendered github/new_repository.html.erb within layouts/application (Duration: 105.6ms | Allocations: 4771)
+  Rendered layout layouts/application.html.erb (Duration: 108.1ms | Allocations: 4859)
+Completed 500 Internal Server Error in 115ms (ActiveRecord: 0.0ms | Allocations: 5746)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `upload_repository_path' for #<ActionView::Base:0x0000000000b720>
+
+  '.freeze;@output_buffer.append=  form_tag(upload_repository_path, multipart: true) do @output_buffer.safe_append='
+                                            ^^^^^^^^^^^^^^^^^^^^^^
+Did you mean?  download_repository_path):
+    2: <div class="container">
+    3:   <h1>Subir Nuevo Repositorio</h1>
+    4: 
+    5:   <%= form_tag(upload_repository_path, multipart: true) do %>
+    6:     <label for="repository_file">Seleccionar archivo del repositorio:</label>
+    7:     <%= file_field_tag 'repository_file' %>
+    8: 
+  
+app/views/github/new_repository.html.erb:5
+Started GET "/" for 127.0.0.1 at 2023-11-13 09:56:01 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 70.9ms | Allocations: 5747)
+  Rendered layout layouts/application.html.erb (Duration: 74.7ms | Allocations: 5835)
+Completed 500 Internal Server Error in 10663ms (ActiveRecord: 0.0ms | Allocations: 9131)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_repository_path' for #<ActionView::Base:0x0000000000ba40>
+
+    '.freeze;@output_buffer.append=( link_to 'Subir Nuevo Repositorio', new_repository_path, class: 'upload-button' );@output_buffer.safe_append='
+                                                                        ^^^^^^^^^^^^^^^^^^^
+Did you mean?  new_polymorphic_path):
+    25:       <p class="error-message"><%= @error_message %></p>
+    26:     <% end %>
+    27: 
+    28:     <%= link_to 'Subir Nuevo Repositorio', new_repository_path, class: 'upload-button' %>
+    29: 
+    30:   </div>
+    31: 
+  
+app/views/github/repositories.html.erb:28
+Started GET "/" for 127.0.0.1 at 2023-11-13 09:58:22 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 1.1ms | Allocations: 688)
+  Rendered layout layouts/application.html.erb (Duration: 281.5ms | Allocations: 35382)
+Completed 200 OK in 5899ms (Views: 286.2ms | ActiveRecord: 0.0ms | Allocations: 37959)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2023-11-13 09:58:29 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/github/new_repository" for 127.0.0.1 at 2023-11-13 09:59:10 -0600
+Processing by GithubController#new_repository as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/new_repository.html.erb within layouts/application
+  Rendered github/new_repository.html.erb within layouts/application (Duration: 104.4ms | Allocations: 4750)
+  Rendered layout layouts/application.html.erb (Duration: 104.7ms | Allocations: 4832)
+Completed 500 Internal Server Error in 106ms (ActiveRecord: 0.0ms | Allocations: 5155)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `upload_repository_path' for #<ActionView::Base:0x00000000010478>
+
+  '.freeze;@output_buffer.append=  form_tag(upload_repository_path, multipart: true) do @output_buffer.safe_append='
+                                            ^^^^^^^^^^^^^^^^^^^^^^
+Did you mean?  download_repository_path):
+    2: <div class="container">
+    3:   <h1>Subir Nuevo Repositorio</h1>
+    4: 
+    5:   <%= form_tag(upload_repository_path, multipart: true) do %>
+    6:     <label for="repository_file">Seleccionar archivo del repositorio:</label>
+    7:     <%= file_field_tag 'repository_file' %>
+    8: 
+  
+app/views/github/new_repository.html.erb:5
+Started GET "/" for 127.0.0.1 at 2023-11-13 10:07:04 -0600
+Processing by GithubController#repositories as HTML
+Completed 500 Internal Server Error in 15231ms (ActiveRecord: 0.0ms | Allocations: 751)
+
+
+  
+SocketError (Failed to open TCP connection to api.github.com:443 (getaddrinfo: Temporary failure in name resolution)):
+  
+app/controllers/github_controller.rb:12:in `repositories'
+Started GET "/" for 127.0.0.1 at 2023-11-13 10:07:45 -0600
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 7.2ms | Allocations: 981)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 3744)
+Completed 200 OK in 599ms (Views: 26.0ms | ActiveRecord: 0.0ms | Allocations: 6435)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2023-11-13 10:07:46 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/github/new_repository" for 127.0.0.1 at 2023-11-13 10:07:48 -0600
+Processing by GithubController#new_repository as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/new_repository.html.erb within layouts/application
+  Rendered github/new_repository.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1232)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 1312)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 1622)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!-- app/views/github/new_repository.html.erb -->
+<div class="container">
+  <h1>Subir Nuevo Repositorio</h1>
+
+  <!--<%= form_tag(upload_repository_path, multipart: true) do %>-->
+ <!-- ESTA RUTA NO ESTA DIFINIDA EN ROUTES -->
+  <%= form_tag(github_upload_repository_path, multipart: true) do %>
+    <label for="repository_file">Seleccionar archivo del repositorio:</label>
+    <%= file_field_tag 'repository_file' %>
+
+    <%= submit_tag 'Subir Repositorio' %>
+  <% end %>
+
+  <% if @upload_success %>
+    <p class="success-message"><%= @upload_success %></p>
+  <% end %>
+
+  <% if @upload_error %>
+    <p class="error-message"><%= @upload_error %></p>
+  <% end %>
+</div>
+
+):
+1:    <!-- app/views/github/new_repository.html.erb -->
+2:    <div class="container">
+3:      <h1>Subir Nuevo Repositorio</h1>
+4:    
+5:      <!--<%= form_tag(upload_repository_path, multipart: true) do %>-->
+6:     <!-- ESTA RUTA NO ESTA DIFINIDA EN ROUTES -->
+7:      <%= form_tag(github_upload_repository_path, multipart: true) do %>
+8:        <label for="repository_file">Seleccionar archivo del repositorio:</label>
+9:        <%= file_field_tag 'repository_file' %>
+10:    
+11:        <%= submit_tag 'Subir Repositorio' %>
+12:      <% end %>
+13:    
+14:      <% if @upload_success %>
+15:        <p class="success-message"><%= @upload_success %></p>
+16:      <% end %>
+17:    
+18:      <% if @upload_error %>
+19:        <p class="error-message"><%= @upload_error %></p>
+20:      <% end %>
+21:    </div>
+  
+app/views/github/new_repository.html.erb:24: syntax error, unexpected end-of-input, expecting `end'
+app/views/github/new_repository.html.erb:24: syntax error, unexpected end-of-input, expecting `end'
+app/views/github/new_repository.html.erb:24: syntax error, unexpected end-of-input, expecting `end'
+app/views/github/new_repository.html.erb:24: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/github/new_repository" for 127.0.0.1 at 2023-11-13 10:11:37 -0600
+Processing by GithubController#new_repository as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/new_repository.html.erb within layouts/application
+  Rendered github/new_repository.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1265)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 1355)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 2233)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!-- app/views/github/new_repository.html.erb -->
+<div class="container">
+  <h1>Subir Nuevo Repositorio</h1>
+
+  
+ <!--<%= form_tag(upload_repository_path, multipart: true) do %>-->
+  <!-- ESTA RUTA NO ESTA DIFINIDA EN ROUTES -->
+  <%= form_tag(github_upload_repository_path, multipart: true) do %>
+    <label for="repository_file">Seleccionar archivo del repositorio:</label>
+    <%= file_field_tag 'repository_file' %>
+
+    <%= submit_tag 'Subir Repositorio' %>
+  <% end %>
+
+  <% if @upload_success %>
+    <p class="success-message"><%= @upload_success %></p>
+  <% end %>
+
+  <% if @upload_error %>
+    <p class="error-message"><%= @upload_error %></p>
+  <% end %>
+</div>
+
+):
+1:    <!-- app/views/github/new_repository.html.erb -->
+2:    <div class="container">
+3:      <h1>Subir Nuevo Repositorio</h1>
+4:    
+5:      
+6:     <!--<%= form_tag(upload_repository_path, multipart: true) do %>-->
+7:      <!-- ESTA RUTA NO ESTA DIFINIDA EN ROUTES -->
+8:      <%= form_tag(github_upload_repository_path, multipart: true) do %>
+9:        <label for="repository_file">Seleccionar archivo del repositorio:</label>
+10:        <%= file_field_tag 'repository_file' %>
+11:    
+12:        <%= submit_tag 'Subir Repositorio' %>
+13:      <% end %>
+14:    
+15:      <% if @upload_success %>
+16:        <p class="success-message"><%= @upload_success %></p>
+17:      <% end %>
+18:    
+19:      <% if @upload_error %>
+20:        <p class="error-message"><%= @upload_error %></p>
+21:      <% end %>
+22:    </div>
+  
+app/views/github/new_repository.html.erb:25: syntax error, unexpected end-of-input, expecting `end'
+app/views/github/new_repository.html.erb:25: syntax error, unexpected end-of-input, expecting `end'
+app/views/github/new_repository.html.erb:25: syntax error, unexpected end-of-input, expecting `end'
+app/views/github/new_repository.html.erb:25: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/github/new_repository" for 127.0.0.1 at 2023-11-13 10:12:08 -0600
+Processing by GithubController#new_repository as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/new_repository.html.erb within layouts/application
+  Rendered github/new_repository.html.erb within layouts/application (Duration: 7.4ms | Allocations: 906)
+  Rendered layout layouts/application.html.erb (Duration: 20.0ms | Allocations: 3451)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.0ms | Allocations: 4368)
+
+
+Started POST "/github/upload_repository" for 127.0.0.1 at 2023-11-13 10:13:52 -0600
+Processing by GithubController#upload_repository as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "repository_file"=>#<ActionDispatch::Http::UploadedFile:0x00007fa762868510 @tempfile=#<Tempfile:/tmp/RackMultipart20231113-83157-mluzho.txt>, @content_type="text/plain", @original_filename="back.txt", @headers="Content-Disposition: form-data; name=\"repository_file\"; filename=\"back.txt\"\r\nContent-Type: text/plain\r\n">, "commit"=>"Subir Repositorio"}
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 868)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - /home/lg/Documentos/GitHub/Black_Proyect_GitAPI/uploads/back.txt):
+  
+app/controllers/github_controller.rb:62:in `initialize'
+app/controllers/github_controller.rb:62:in `open'
+app/controllers/github_controller.rb:62:in `upload_repository'
+Started GET "/" for 127.0.0.1 at 2023-11-13 10:17:40 -0600
+Processing by GithubController#repositories as HTML
+Started GET "/" for 127.0.0.1 at 2023-11-13 10:17:42 -0600
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 24.4ms | Allocations: 990)
+  Rendered layout layouts/application.html.erb (Duration: 90.6ms | Allocations: 15053)
+Completed 200 OK in 5639ms (Views: 93.3ms | ActiveRecord: 0.0ms | Allocations: 18612)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-13 10:17:46 -0600
+Processing by GithubController#repositories as HTML
+Processing by GithubController#repositories as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 1.3ms | Allocations: 681)
+  Rendering layout layouts/application.html.erb
+  Rendering github/repositories.html.erb within layouts/application
+  Rendered github/repositories.html.erb within layouts/application (Duration: 3.2ms | Allocations: 602)
+  Rendered layout layouts/application.html.erb (Duration: 1167.1ms | Allocations: 26328)
+Completed 200 OK in 1556ms (Views: 1181.5ms | ActiveRecord: 0.0ms | Allocations: 32537)
+
+
+  Rendered layout layouts/application.html.erb (Duration: 1168.2ms | Allocations: 27493)
+Completed 200 OK in 1563ms (Views: 1176.5ms | ActiveRecord: 0.0ms | Allocations: 34057)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2023-11-13 10:17:48 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/github/new_repository" for 127.0.0.1 at 2023-11-13 10:17:52 -0600
+Processing by GithubController#new_repository as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering github/new_repository.html.erb within layouts/application
+  Rendered github/new_repository.html.erb within layouts/application (Duration: 1.0ms | Allocations: 475)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 2631)
+Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 2896)
+
+
+Started POST "/github/upload_repository" for 127.0.0.1 at 2023-11-13 10:18:01 -0600
+Processing by GithubController#upload_repository as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "repository_file"=>#<ActionDispatch::Http::UploadedFile:0x00007fa7628a9fd8 @tempfile=#<Tempfile:/tmp/RackMultipart20231113-83157-av0f77.txt>, @content_type="text/plain", @original_filename="back.txt", @headers="Content-Disposition: form-data; name=\"repository_file\"; filename=\"back.txt\"\r\nContent-Type: text/plain\r\n">, "commit"=>"Subir Repositorio"}
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 0.0ms | Allocations: 4022)
+
+
+  
+NameError (undefined local variable or method `current_user' for #<GithubController:0x0000000001a1a8>
+
+          current_user.repositories.create(name: uploaded_file.original_filename, path: file_path.to_s)
+          ^^^^^^^^^^^^):
+  
+app/controllers/github_controller.rb:68:in `upload_repository'
+Started GET "/" for 127.0.0.1 at 2023-11-13 10:19:45 -0600
+  
+NoMethodError (undefined method `before_action' for #<ActionDispatch::Routing::Mapper:0x00007fa743dc5db0 @set=#<ActionDispatch::Routing::RouteSet:0x00007fa761da9818>, @draw_paths=[#<Pathname:/home/lg/Documentos/GitHub/Black_Proyect_GitAPI/config/routes>], @scope=#<ActionDispatch::Routing::Mapper::Scope:0x00007fa743dc5d60 @hash={:path_names=>{:new=>"new", :edit=>"edit"}}, @parent=#<ActionDispatch::Routing::Mapper::Scope:0x00007fa761b5ee28 @hash=nil, @parent=nil, @scope_level=nil>, @scope_level=nil>, @concerns={}>
+
+  before_action :authenticate_user!
+  ^^^^^^^^^^^^^):
+  
+config/routes.rb:3:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2023-11-13 10:20:26 -0600
+Processing by GithubController#repositories as HTML
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 0.0ms | Allocations: 6135)
+
+
+  
+NoMethodError (undefined method `authenticate_user!' for #<GithubController:0x0000000001ea78>
+
+              target.send(@method_name, &block)
+                    ^^^^^
+Did you mean?  authenticate_with_http_digest):
+  
+activesupport (7.0.8) lib/active_support/callbacks.rb:400:in `block in make_lambda'
+activesupport (7.0.8) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.8) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.8) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.8) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.8) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.8) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.8) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+actiontext (7.0.8) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.8) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.8) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.8) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.8) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.8) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.8) lib/action_controller/metal/rescue.rb:23:in `process_action'
+actionpack (7.0.8) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.8) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.8) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.8) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.8) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.8) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.8) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.8) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.8) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.8) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.8) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.8) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.8) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.8) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.8) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.8) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.8) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.8) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.8) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.8) lib/active_record/migration.rb:638:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.8) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.8) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.8) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.8) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.8) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.8) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.8) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.8) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.8) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.8) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/host_authorization.rb:138:in `call'
+railties (7.0.8) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'

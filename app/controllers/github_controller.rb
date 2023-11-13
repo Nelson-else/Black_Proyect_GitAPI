@@ -1,5 +1,6 @@
 
 class GithubController < ApplicationController
+    
     # app/controllers/github_controller.rb
     include HTTParty
     base_uri 'https://api.github.com'
@@ -45,5 +46,40 @@ class GithubController < ApplicationController
           @error_message = "Nombre de repositorio o nombre de usuario inválido."
         end
       end
+
+     
+
+      def new_repository
+        # Renderiza el formulario para subir un nuevo repositorio
+      end
+    
+      def upload_repository
+        uploaded_file = params[:repository_file]
+    
+        if uploaded_file.present?
+          # Guarda el archivo en algún lugar, por ejemplo, en el directorio 'uploads'
+          file_path = Rails.root.join('uploads', uploaded_file.original_filename)
+              # Crea el directorio si no existe
+            Dir.mkdir(file_path.dirname) unless File.directory?(file_path.dirname)
+          File.open(file_path, 'wb') do |file|
+            file.write(uploaded_file.read)
+          end
+    
+          # Asocia el nuevo repositorio con la cuenta del usuario actual
+          current_user.repositories.create(name: uploaded_file.original_filename, path: file_path.to_s)
+    
+          @upload_success = "Repositorio '#{uploaded_file.original_filename}' subido con éxito."
+    
+          # Aquí puedes agregar lógica adicional según tus necesidades, como clonar el repositorio, etc.
+    
+        else
+          @upload_error = 'Por favor, selecciona un archivo del repositorio para subir.'
+        end
+    
+        render 'new_repository'
+      end
+
+
+
       
 end
