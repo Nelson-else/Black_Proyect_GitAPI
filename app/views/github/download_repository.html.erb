@@ -1,19 +1,21 @@
-<!-- app/views/github/repositories.html.erb -->
-<h1>Repositorios de GitHub</h1>
+<!-- app/views/github/download_repository.html.erb -->
+<div class="container">
+  <h1>Repositorios de GitHub</h1>
 
-<% if @repositories %>
-  <ul>
-    <% @repositories.each do |repo| %>
-      <li>
-        <%= repo['name'] %>
-        <%= link_to 'Descargar', download_repository_path(username: 'xxxx', repo_name: repo['full_name']), method: :get %>
-      </li>
-    <% end %>
-  </ul>
-<% else %>
-  <p><%= @error_message %></p>
-<% end %>
+  <% if @repositories %>
+    <ul class="repository-list">
+      <% @repositories.each do |repo| %>
+        <li class="repository-item">
+          <%= repo['name'] %>
+          <%= link_to 'Descargar', download_repository_path(username: 'xxxx', repo_name: repo['full_name']), method: :get, class: 'download-link' %>
+        </li>
+      <% end %>
+    </ul>
+  <% else %>
+    <p class="error-message"><%= @error_message %></p>
+  <% end %>
 
-<% if @success_message %>
-  <p><%= @success_message %></p>
-<% end %>
+  <% if @success_message %>
+    <p class="success-message"><%= @success_message %></p>
+  <% end %>
+</div>
